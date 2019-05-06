@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{>head}}
+  <link rel="stylesheet" id="style-link" href="/css/styles-15.css">
+
+</head>
+
+<body class="blog--single blog--single__full">
+  {{>header}}
+  
+  <div id="aheto-map" class="aheto-map  " data-zoom="{{zoom-level}}" data-center-lat="48.695733" data-center-lng="19.248894" data-marker-img="" data-active-marker-img="" data-lat-0="49.0707032" data-lng-0="19.2738341" data-img-0="../img/inner-pages/contact/marker-1.png"
+    data-active-0="" data-title-0="" data-desc-0="">
+  </div>
+  <div class="container-fluid border-top">  
+  </div>
+  <div class="post-content">
+    <div class="container" style="position: relative; top: -100px; background: white;padding-bottom: 0px;">
+        <div class="contact-single-wrap__contacts" style="margin-top: -140px;background: transparent;">
+            <div class="row padding-lg-85t padding-md-65t padding-sm-40t">
+              <div class="col-md-4 padding-sm-35b">
+                <div class="aheto-contact aheto-contact--simple aheto-contact--dvder  t-center">
+                  <i class="aheto-contact__icon icon fas fa-mobile-alt"></i>
+                  <h6 class="aheto-contact__type t-uppercase t-medium">Phone</h6>
+                  <a class="aheto-contact__link aheto-contact__info" href="tel:+421907030075">+421 907 030 075</a>
+                </div>
+              </div>
+              <div class="col-md-4 padding-sm-35b">
+                <div class="aheto-contact aheto-contact--simple aheto-contact--dvder  t-center">
+                  <i class="aheto-contact__icon icon fas fa-map-marked-alt"></i>
+                  <h6 class="aheto-contact__type t-uppercase t-medium">GPS</h6>
+                  <p class="aheto-contact__info">49°04'13.3"N 19°16'25.5"E<br>49.070376,19.273753</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="aheto-contact aheto-contact--simple  t-center">
+                  <i class="aheto-contact__icon icon far fa-envelope-open"></i>
+                  <h6 class="aheto-contact__type t-uppercase t-medium">Email</h6>
+                  <a class="aheto-contact__link aheto-contact__info" href="mailto:chatalenka@gmail.com">chatalenka@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- <div class="row margin-lg-115t margin-lg-55b margin-md-35b margin-md-70t margin-sm-50t">
+        <div class="col-md-8 offset-md-2">
+          <div class="aheto-heading t-center "> -->
+            <!-- <h2 class="aheto-heading__title    t-light ">Built on passion and <span>ingenuity</span></h2>
+            <p class="aheto-heading__desc   ">TommusRhodus is an elite author known for offering high-quality, high-value
+              products backed by timely and personable support. Recognised and awarded by Envato on multiple occasions</p> -->
+              {{{contents}}}
+          <!-- </div>
+        </div>
+      </div> -->
+    </div> 
+  </div>
+  {{>footer}}
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&amp;#038;&language=en"></script>
+  <script src="/vendors/googlemap/google-maps.js"></script>
+
+</body>
+
+</html>

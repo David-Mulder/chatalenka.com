@@ -1,0 +1,6 @@
+{
+    "debug.node.autoAttach": "off",
+    "search.exclude": {
+        "**/build": true
+    }
+}

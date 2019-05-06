@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>head}}
+    <link rel="stylesheet" id="style-link" href="/css/styles-15.css">
+
+</head>
+
+<body>
+    {{>header}}
+    <div class="container-fluid border-top">
+    </div>
+    <div class="wrap-1750px">
+        <div class="aheto-pf aheto-pf--metro">
+            <div class="aheto-pf__container">
+                <!-- aheto-pf__item--height aheto-pf__item--width -->
+                {{#each photos}}
+                <div class="aheto-pf__item   {{#if this.big}}aheto-pf__item--height aheto-pf__item--width{{/if}}" {{#if this.link}}onclick="location.href='{{this.link}}'"{{/if}}>
+                    <div class="aheto-pf__content ">
+                        <div class="aheto-pf__img">
+                                <img class="js-bg" src="/img/{{this.photo}}{{#if this.big}}.1640{{/if}}{{#unless this.big}}.820{{/unless}}.jpg" alt="">
+                            </div>
+                        <div class="aheto-pf__text">
+                            <a class="aheto-pf__title" {{#if this.link}}href="{{this.link}}"{{/if}}>{{this.title}}</a>
+                            {{#if this.description}}
+                            <div class="aheto-pf__cat-wrap">
+                                <a class="aheto-pf__cat" {{#if this.link}}href="{{this.link}}"{{/if}}>
+                                    <p>{{this.description}} {{#if this.link}}<u>Read more</u>{{/if}}</p>
+                                </a>
+                            </div>
+                            {{/if}}
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+</body>
+
+</html>

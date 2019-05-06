@@ -1,0 +1,3 @@
+This repository is public, but that does **NOT** mean it's open source. You can read it, browse it, but you can **not** use the code in it or copy anything for your own use. This is **NOT** licensed under any open source license.
+
+This repository contains quick & dirty code, combining a copyrighted template with a quick & dirty implementation in metalsmith. The code quality is inconsistent and messy.

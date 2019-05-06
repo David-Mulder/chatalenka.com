@@ -1,0 +1,196 @@
+{{!-- {{#each (lookup . )}}
+test: {{this.title}}
+{{/each}} --}}
+
+<header class="aheto-header main-header main-header--horizontal main-header--left-logo main-header--center-nav main-header--white ">
+    <div class="main-header__nav-wrap">
+        <div class="main-header__toolbar-wrap main-header__toolbar-wrap--solid">
+            <div class="container-fluid">
+                <div class="col-md-12">
+                    <div class="aheto-toolbar">
+                        <nav class="no-menu"></nav>
+                        <div class="widget widget_text">
+                            <div class="textwidget">
+                                <h6>Phone: <a href="tel:+421907030075">+421 907 030 075</a></h6>
+                            </div>
+                        </div>
+                        <div class="widget widget_text">
+                            <div class="textwidget">
+                                <h6>Email: <a href="mailto:chatalenka@gmail.com">chatalenka@gmail.com</a></h6>
+                            </div>
+                        </div>
+                        <div class="registartion">
+                            <a href="{{locale}}/book-now/">Book now</a>
+                        </div>
+                        <!-- <div class="log-in">
+                    <a href="#">Log in</a>
+                  </div> -->
+                        <ul class="aht-socials aht-socials--sm aht-toolbar__right-side">
+                            <li class="aht-socials__item">
+                                <a href="https://www.facebook.com/chatalenka/">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <!-- <li class="aht-socials__item">
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="aht-socials__item">
+                      <a href="#">
+                        <i class="fa fa-tumblr" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="aht-socials__item">
+                      <a href="#">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                      </a>
+                    </li> -->
+                            <li class="aht-socials__item">
+                                <a href="https://local.google.com/place?id=3611650845623838788&use=srp&hl=en-GB&_ga=2.179189604.1796973593.1556975389-570398617.1556975389">
+                                    <i class="fab fa-google" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="aht-socials__item">
+                                <a href="https://goo.gl/maps/GVziyS1kgiVerpHd9">
+                                    <i class="fas fa-map" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header__menu-wrap">
+            <div class="main-header__fluid-container no-lr-padd-sm">
+                <div class="main-header__main-line">
+                    <a href="" class="aheto-logo aheto-logo--dark main-header__logo">
+                        <!-- <img src="img/home/footer-logo-11.png" class="aheto-logo__image logo-blue" alt="">
+                  <img src="img/home/logo_w.png" class="aheto-logo__image logo-white" alt=""> -->
+                        <h1 class="aheto-logo__text">Chata Lenka</h1>
+                    </a>
+                    <div class="main-header__menu-box">
+                        <nav class="menu-home-page-container">
+                            <ul class="main-menu main-menu--mobile-view  main-menu--dark main-menu--inline main-menu--ci-line-abow main-menu--ddt-default main-menu--ddc-white">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item--mega-menu">
+                                    <a href="">Home</a>
+                                    <!-- <div class="sub-menu menu-depth-1 mega-menu">
+                        <div class="mega-menu__col">
+                          <h4 class="mega-menu__title"> Menu Item 1</h4>
+                          <ul class="mega-menu__list">
+                            <li class="menu-item"><a href="#">Menu Item 1</a></li>
+                            <li class="menu-item"><a href="#">Menu Item 2</a></li>
+                          </ul>
+                        </div>
+                        <div class="mega-menu__col">
+                          <h4 class="mega-menu__title"> Menu Item 2</h4>
+                          <ul class="mega-menu__list">
+                            <li class="menu-item"><a href="#">Menu Item 1</a></li>
+                            <li class="menu-item"><a href="#">Menu Item 2</a></li>
+                            <li class="menu-item"><a href="#">Menu Item 3</a></li>
+                          </ul>
+                        </div>
+                      </div> -->
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                    <a href="/{{locale}}/the-villa/">About us</a>
+                                    <ul class="sub-menu menu-depth-1">
+                                        {{#each (lookup (lookup . locale) 'aboutus')}}
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="{{this.path}}">{{this.title}}</a></li>
+                                        {{/each}}
+                                        {{!-- {{#each aboutus}}
+                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="{{this.path}}">{{this.title}}</a></li>
+                                        {{/each}} --}}
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                    <a href="/{{locale}}/photos">Photos</a>
+                                    <ul class="sub-menu menu-depth-1">
+                                        {{#each (lookup (lookup . locale) 'photos')}}
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="{{this.path}}">{{this.title}}</a></li>
+                                        {{/each}}
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                                    <a href="#">Surroundings</a>
+                                    <ul class="sub-menu menu-depth-1">
+                                        {{#each (lookup (lookup . locale) 'surroundings')}}
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                                <a href="{{this.path}}">{{this.title}}</a></li>
+                                        {{/each}}
+                                    </ul>
+                                </li>
+                                <!--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                      <a href="#">Shop</a>
+                      <ul class="sub-menu menu-depth-1">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Menu Item 1</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#">Menu Item 2</a></li>
+                      </ul>
+                    </li>-->
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                                    <a href="/{{locale}}/book-now">Contact us</a>
+                                    <!-- <ul class="sub-menu menu-depth-1">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact/contact-simple.html">Contact
+                                                simple</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact/contact-modern.html">Contact
+                                                modern</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact/contact-sidebar.html">Contact
+                                                sidebar</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact/contact-multi-locations.html">Contact
+                                                multi locations</a></li>
+                                    </ul> -->
+                                </li> 
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="wpml-ls-sidebars-sidebar-1 wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown">
+                        <ul>
+                            <li tabindex="0" class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown">
+                                <a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle">
+                                    <img class="wpml-ls-flag" src="/img/multilang/flag-2.png" alt="en" title="English">
+                                    <span class="wpml-ls-native">English <i class="icon fas fa-chevron-down"></i></span>
+                                </a>
+                                <ul class="wpml-ls-sub-menu">
+                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-de">
+                                        <a href="/sk/">
+                                            <img class="wpml-ls-flag" src="/img/multilang/lang-sk.png" alt="sk" title="Slovak">
+                                            <span class="wpml-ls-native">Slovak</span>
+                                        </a>
+                                    </li>
+                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-ru wpml-ls-last-item">
+                                        <a href="/en/">
+                                            <img class="wpml-ls-flag" src="/img/multilang/flag-2.png" alt="en" title="English">
+                                            <span class="wpml-ls-native">English</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <ul class="icons-widget main-header__icons">
+                  <li class="icons-widget__item">
+                    <a class="icons-widget__link search-btn js-open-search" href="#">
+                      <i class="icon ion-ios-search-strong" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="icons-widget__item">
+                    <a class="icons-widget__link" href="#">
+                      <i class="icon ion-bag" aria-hidden="true"></i>
+                      <span class="button-number">0</span>
+                    </a>
+                  </li>-->
+                </ul>
+                <button class="hamburger hamburger--squeeze main-header__hamburger js-toggle-mobile-menu" type="button">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
