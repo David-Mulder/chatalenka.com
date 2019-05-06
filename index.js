@@ -91,18 +91,18 @@ let a = Metalsmith(__dirname)
     }]
   }));
 
-if (!debug) {
-  a = a
-    .use(cleanCSS({
-      files: '**/*.css',
-      cleanCSS: {
-        rebase: true
-      }
-    }))
-    .use(htmlMinifier({
-      pattern: "**/*.html"
-    }))
-}
+// if (!debug) {
+//   a = a
+//     .use(cleanCSS({
+//       files: '**/*.css',
+//       cleanCSS: {
+//         rebase: true
+//       }
+//     }))
+//     .use(htmlMinifier({
+//       pattern: "**/*.html"
+//     }))
+// }
 
 a.build(function (err, files) {
   if (err) { throw err; }
