@@ -18,17 +18,14 @@ const debug = process.argv.length > 2 && process.argv[2] === 'prod' ? false : tr
 
 function plugin(opts) {
   // opts.pattern = opts.pattern || []; 
-  console.log(opts);
   return function (files, metalsmith, done) {
     var metadata = metalsmith.metadata();
     for (const locale of metadata.locales) {
       metadata[locale] = {};
       for (const collectionName of Object.keys(metadata.collections)) {
-        console.log('metadata.collections[collectionName]', metadata.collections);
         metadata[locale][collectionName] = metadata.collections[collectionName].map(page => page.altFiles[locale]);
       }
     }
-    console.log(metadata);
     setImmediate(done);
     Object.keys(files).forEach(function (file) {
       // if(multimatch(file, opts.pattern).length) {
