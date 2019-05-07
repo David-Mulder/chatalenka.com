@@ -6,7 +6,7 @@ low-season: Low season
 low-season-price: '€ 125,00'
 low-season-extra-guests: €5 p.p.p.n.
 summer-season: July - August
-summer-season-price: '€ 125,01'
+summer-season-price: '€ 125,00'
 summer-season-extra-guests: €5 p.p.p.n.
 winter-season: Christmas - March
 winter-season-price: '€ 165,00'
