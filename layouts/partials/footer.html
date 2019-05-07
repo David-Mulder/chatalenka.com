@@ -31,3 +31,14 @@
 
 <script src="/vendors/script.js"></script>
 <script src="/vendors/animation/anm.min.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>

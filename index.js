@@ -64,6 +64,10 @@ let a = Metalsmith(__dirname)
     source: './assets',
     destination: './'
   }))
+  .use(assets({
+    source: './admin',
+    destination: './admin'
+  }))
   // .use(branch('posts/*').use(
   //   permalinks({
   //     pattern: ':locale/:title'
