@@ -1,7 +1,7 @@
 ---
 layout: page.html
-title: Active
 collection: posts
+title: Caves of Liptov
 ---
 The caves in and near Liptov
 ==============================================
