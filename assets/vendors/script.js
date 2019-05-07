@@ -410,10 +410,11 @@
         if ('none' == _this.css('display')) {
           return true;
         }
+        console.log(_this.attr('src'));
 
         $parent = _this.closest(parentSel);
         $parent = $parent.length ? $parent : _this.parent();
-        $parent.css('background-image', 'url(' + _this.attr('src') + ')');
+        $parent.css('background-image', 'url("' + _this.attr('src') + '")');
         _this.hide();
       });
   }
