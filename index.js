@@ -13,6 +13,7 @@ var localizeCollection = require('metalsmith-localize-collection');
 var cleanCSS = require('metalsmith-clean-css');
 var htmlMinifier = require("metalsmith-html-minifier");
 var imageResizer = require('metalsmith-image-resizer');
+var registerHelpers = require('metalsmith-register-helpers');
 
 const debug = process.argv.length > 2 && process.argv[2] === 'prod' ? false : true;
 
@@ -51,6 +52,9 @@ let a = Metalsmith(__dirname)
   .source('./src')
   .destination('./build')
   .clean(true)
+  .use(registerHelpers({
+    directory: './layouts/helpers'
+  }))
   .use(collections())
   .use(partial({
     directory: './layouts/partials',

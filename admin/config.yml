@@ -16,6 +16,16 @@ collections:
       - {label: "Collection", name: "collection", widget: "hidden", default: "posts"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "english galleries"
+    label: "English galleries"
+    folder: "src/en/"
+    create: true
+    filter: {field: "layout", value: "gallery.html"}
+    fields: 
+      - {label: "Layout", name: "layout", widget: "hidden", default: "gallery.html"}
+      - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"], multiple: true}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Title", name: "title", widget: "string"}, {label: "Image", name: "image", widget: "image"}]}
   - name: "english pages"
     label: "English standard pages"
     folder: "src/en/"

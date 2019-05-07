@@ -18,6 +18,7 @@
     "metalsmith-multi-language": "^0.3.0",
     "metalsmith-partial": "^0.1.0",
     "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-register-helpers": "^0.4.0",
     "metalsmith-register-partials": "^1.0.2",
     "sharp": "^0.22.1"
   },
