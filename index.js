@@ -21,26 +21,31 @@ function plugin(opts) {
   // opts.pattern = opts.pattern || []; 
   return function (files, metalsmith, done) {
     var metadata = metalsmith.metadata();
+    
     for (const locale of metadata.locales) {
       metadata[locale] = {};
       for (const collectionName of Object.keys(metadata.collections)) {
-        metadata[locale][collectionName] = metadata.collections[collectionName].map(page => page.altFiles[locale]);
+        // metadata[locale][collectionName] = metadata.collections[collectionName].map(page => page.altFiles[locale]);
+        metadata[locale][collectionName] = metadata.collections[collectionName].filter(page => page.locale === locale);
       }
-    }
+    } 
+    // if (debug) {
+    //   console.log(metadata);
+    // }
     setImmediate(done);
     Object.keys(files).forEach(function (file) {
       // if(multimatch(file, opts.pattern).length) {
       //   debug('myplugin working on: %s', file);
 
       //   //
-      //   // here would be your code
+      //   // here would be your code 
       //   //
 
       // }
     });
   };
 }
-// setTimeout(() => {}, 100000);
+setTimeout(() => {}, 100000);
 
 let a = Metalsmith(__dirname)
   .metadata({

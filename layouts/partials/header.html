@@ -150,22 +150,26 @@ test: {{this.title}}
                         <ul>
                             <li tabindex="0" class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown">
                                 <a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle">
-                                    <img class="wpml-ls-flag" src="/img/multilang/flag-2.png" alt="en" title="English">
-                                    <span class="wpml-ls-native">English <i class="icon fas fa-chevron-down"></i></span>
+                                    <img class="wpml-ls-flag" src="/img/multilang/lang-{{locale}}.png" alt="en" title="English">
+                                    <span class="wpml-ls-native">{{#if (equals locale 'en')}}English{{/if}}{{#if (equals locale 'sk')}}Slovak{{/if}} <i class="icon fas fa-chevron-down"></i></span>
                                 </a>
                                 <ul class="wpml-ls-sub-menu">
+                                    {{#unless (equals locale 'en')}}
+                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-ru wpml-ls-last-item">
+                                        <a href="/">
+                                            <img class="wpml-ls-flag" src="/img/multilang/lang-en.png" alt="en" title="English">
+                                            <span class="wpml-ls-native">English</span>
+                                        </a>
+                                    </li>
+                                    {{/unless}}
+                                    {{#unless (equals locale 'sk')}}
                                     <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-de">
                                         <a href="/sk/">
                                             <img class="wpml-ls-flag" src="/img/multilang/lang-sk.png" alt="sk" title="Slovak">
                                             <span class="wpml-ls-native">Slovak</span>
                                         </a>
                                     </li>
-                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-ru wpml-ls-last-item">
-                                        <a href="/en/">
-                                            <img class="wpml-ls-flag" src="/img/multilang/flag-2.png" alt="en" title="English">
-                                            <span class="wpml-ls-native">English</span>
-                                        </a>
-                                    </li>
+                                    {{/unless}}
                                 </ul>
                             </li>
                         </ul>
