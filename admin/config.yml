@@ -6,7 +6,7 @@ public_folder: "/img"
 collections:
   - name: "english pages"
     label: "English page"
-    folder: "src/en/"
+    folder: "src/en/posts/"
     create: true
     slug: "{{slug}}"
     fields: 

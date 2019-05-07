@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build": "node index.js prod --harmony",
-    "watch": "nodemon --inspect --watch src --watch layouts --watch assets --watch index.js -e md,html,js,css --harmony",
+    "watch": "nodemon --inspect --watch src --watch layouts --watch assets --watch index.js -e md,html,js,css,yml --harmony",
     "dev": "node index.js --harmony"
   },
   "engines": {
