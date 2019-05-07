@@ -403,6 +403,7 @@
     let $parent,
       _this;
 
+
     $(imgSel)
       .each(function () {
         _this = $(this);
