@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home.html
+slides:
   - buttonLink: /en/posts/top-7-slovakia/
     buttonText: 7 things you must try in Slovakia
     description: We would love to welcome you.

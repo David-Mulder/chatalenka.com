@@ -11,7 +11,56 @@
     <div class="swiper-container " data-autoplay="true" data-speed="2000" data-loop="true" data-spaceBetween="0" data-slidesPerView="responsive"
       data-add-slides="1" data-lg-slides="1" data-md-slides="1" data-sm-slides="1" data-xs-slides="1" data-effect="fade">
       <div class="swiper-wrapper ">
-        <div class="swiper-slide ">
+        {{#each slides}}
+          {{#if (equals this.style 'center')}}
+          <div class="swiper-slide ">
+            <div class="aht-ban aht-ban--main aht-ban--main-low-opacity aht-ban--main-1 t-center">
+              <img class="js-bg" src="{{this.photo}}" alt="Background">
+              <div class="aht-ban__content">
+                <h1 class="aht-ban__title">{{{break this.header}}}</h1>
+                <h5 class="aht-ban__desc">{{this.description}}</h5>
+                <div class="aht-ban__links">
+                  <div class="aht-ban__link-wrap">
+                    <a class="aht-ban__link-prime aheto-btn t-uppercase" href="{{this.buttonLink}}">{{this.buttonText}}</a>
+                  </div>
+                  <!-- <div class="aht-ban__link-wrap">
+                      <a class="aht-ban__link-second aheto-btn aheto-btn--light aheto-btn--underline" href="#">view the demos</a>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/if}}
+          {{#if (equals this.style 'left')}}
+            <div class="swiper-slide ">
+              <div class="aht-ban aht-ban--main aht-ban--main-middle-opacity aht-ban--main-3">
+                <img class="js-bg" src="{{this.photo}}" alt="Background">
+                <div class="aht-ban__content">
+                  <h1 class="aht-ban__title">{{{break this.header}}}</h1>
+                  <h5 class="aht-ban__desc">{{this.description}}</h5>
+                  <div class="aht-ban__links">
+                      <a class="aht-ban__link aheto-btn t-uppercase margin-lg-15r" href="/{{locale}}/book-now/">Book now</a>
+                      <a class="aht-ban__link aheto-btn aheto-btn--light t-uppercase margin-xs-20t" href="{{locale}}/photos">See the photos</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+        {{/each}}
+        <!-- <div class="swiper-slide ">
+            <div class="aht-ban aht-ban--main aht-ban--main-middle-opacity aht-ban--main-3 ">
+              <img class="js-bg" src="/img/front-clean.2560.jpg" alt="Background">
+              <div class="aht-ban__content">
+                <h1 class="aht-ban__title">Allow us to be your hosts.</h1>
+                <h5 class="aht-ban__desc">And welcome you in our modern vacation villa in the heart of Slovakia</h5>
+                <div class="aht-ban__links">
+                  <a class="aht-ban__link aheto-btn t-uppercase margin-lg-15r" href="/{{locale}}/book-now/">Book now</a>
+                  <a class="aht-ban__link aheto-btn aheto-btn--light t-uppercase margin-xs-20t" href="{{locale}}/photos">See the photos</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!-- <div class="swiper-slide ">
           <div class="aht-ban aht-ban--main aht-ban--main-low-opacity aht-ban--main-1 t-center">
             <img class="js-bg" src="/img/slovakia.jpg" alt="Background">
             <div class="aht-ban__content">
@@ -21,13 +70,10 @@
                 <div class="aht-ban__link-wrap">
                   <a class="aht-ban__link-prime aheto-btn t-uppercase" href="/en/posts/top-7-slovakia/">7 things you have to try in Slovakia</a>
                 </div>
-                <!-- <div class="aht-ban__link-wrap">
-                    <a class="aht-ban__link-second aheto-btn aheto-btn--light aheto-btn--underline" href="#">view the demos</a>
-                  </div> -->
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- <div class="swiper-slide ">
             <div class="aht-ban aht-ban--main t-center">
               <img class="js-bg" src="/img/front-clean.jpg" alt="Background">
@@ -40,19 +86,7 @@
               </div>
             </div>
           </div> -->
-        <div class="swiper-slide ">
-          <div class="aht-ban aht-ban--main aht-ban--main-middle-opacity aht-ban--main-3 ">
-            <img class="js-bg" src="/img/front-clean.2560.jpg" alt="Background">
-            <div class="aht-ban__content">
-              <h1 class="aht-ban__title">Allow us to be your hosts.</h1>
-              <h5 class="aht-ban__desc">And welcome you in our modern vacation villa in the heart of Slovakia</h5>
-              <div class="aht-ban__links">
-                <a class="aht-ban__link aheto-btn t-uppercase margin-lg-15r" href="/{{locale}}/book-now/">Book now</a>
-                <a class="aht-ban__link aheto-btn aheto-btn--light t-uppercase margin-xs-20t" href="{{locale}}/photos">See the photos</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
     <div class="swiper-button-prev">
