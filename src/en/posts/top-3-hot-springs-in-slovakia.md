@@ -1,6 +1,7 @@
 ---
 layout: page.html
 title: Thermal spas in Slovakia
+collection: posts
 ---
 Top 3 thermal baths or hot springs in Slovakia
 ==============================================
