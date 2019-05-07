@@ -16,7 +16,3 @@ photos: [
 
 ]
 ---
-
-English **pricing**
-===============
-Welcome to a paragraph

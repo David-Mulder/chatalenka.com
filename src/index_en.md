@@ -1,6 +1,5 @@
 ---
 layout: home.html
-abc: test
 reviews: [
     {title: 'Location', score: 9.3},
     {title: 'Cleanliness', score: 9.8},

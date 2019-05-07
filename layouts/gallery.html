@@ -21,7 +21,7 @@
                                 <img class="js-bg" src="{{imagesize this.photo this.big}}" alt="">
                             </div>
                         <div class="aheto-pf__text">
-                            <a class="aheto-pf__title" {{#if this.link}}href="{{this.link}}"{{/if}}>{{this.title}}</a>
+                            <a class="aheto-pf__title" {{#if this.link}}href="{{this.link}}"{{/if}}{{#unless this.link}}href="#"{{/unless}}>{{this.title}}</a>
                             {{#if this.description}}
                             <div class="aheto-pf__cat-wrap">
                                 <a class="aheto-pf__cat" {{#if this.link}}href="{{this.link}}"{{/if}}>
