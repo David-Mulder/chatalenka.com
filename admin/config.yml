@@ -25,7 +25,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "gallery.html"}
       - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"], multiple: true}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Title", name: "title", widget: "string"}, {label: "Photo", name: "photo", widget: "image"}]}
+      - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Photo", name: "photo", widget: "image"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "link", name: "link", widget: "string", required: false}, {label: "Big image", name: "big", widget: "boolean", required: false}]}
   - name: "english pages"
     label: "English standard pages"
     folder: "src/en/"
