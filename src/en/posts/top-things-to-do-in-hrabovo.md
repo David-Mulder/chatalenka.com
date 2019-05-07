@@ -1,7 +1,7 @@
 ---
 layout: page.html
-title: Active
 collection: posts
+title: Top things to do in Hrabovo in summer
 ---
 
 Top things to do in **Hrabovo, Ruzomberok** in summer
