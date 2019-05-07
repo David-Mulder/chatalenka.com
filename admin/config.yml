@@ -25,4 +25,6 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page.html"}
       - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"]}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
+      - {label: "Map zoom level", name: "zoomLevel", widget: "number", step: 1, required: false}
       - {label: "Body", name: "body", widget: "markdown"}

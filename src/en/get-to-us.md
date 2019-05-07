@@ -1,8 +1,9 @@
 ---
-layout: map.html
+layout: page.html
 title: How to get there?
 collection: aboutus
 zoom-level: 5
+showMap: true
 ---
 
 How to get to us? 

@@ -2,7 +2,6 @@
 layout: page.html
 collection: aboutus
 title: Tour of the property
-showMap: true
 ---
 Chata **Lenka**
 ======================================================

@@ -9,7 +9,7 @@
 <body class="blog--single blog--single__full">
   {{>header}}
   
-  <div id="aheto-map" class="aheto-map  " data-zoom="{{zoom-level}}" data-center-lat="48.695733" data-center-lng="19.248894" data-marker-img="" data-active-marker-img="" data-lat-0="49.0707032" data-lng-0="19.2738341" data-img-0="../img/inner-pages/contact/marker-1.png"
+  <div id="aheto-map" class="aheto-map  " data-zoom="{{#if zoom-level}}{{zoom-level}}{{/if}}{{#unless zoom-level}}8{{/unless}}" data-center-lat="48.695733" data-center-lng="19.248894" data-marker-img="" data-active-marker-img="" data-lat-0="49.0707032" data-lng-0="19.2738341" data-img-0="../img/inner-pages/contact/marker-1.png"
     data-active-0="" data-title-0="" data-desc-0="">
   </div>
   <div class="container-fluid border-top">
