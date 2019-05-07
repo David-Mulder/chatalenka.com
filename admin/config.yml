@@ -17,7 +17,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "english pages"
-    label: "English pages"
+    label: "English standard pages"
     folder: "src/en/"
     create: true
     filter: {field: "layout", value: "page.html"}
@@ -26,5 +26,36 @@ collections:
       - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
-      - {label: "Map zoom level", name: "zoomLevel", widget: "number", step: 1, required: false}
+      - {label: "Map zoom level", name: "zoom-level", widget: "number", step: 1, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "Special pages"
+    label: "Configuration"
+    files:
+      - label: "Prices"
+        name: "pricing"
+        file: "src/en/pricing.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Layout", name: "title", widget: "hidden"}
+          - {label: "Layout", name: "collection", widget: "hidden"}
+          - {label: "Layout", name: "low-season", widget: "hidden"}
+          - {label: "Low season price", name: "low-season-price", widget: "string"}
+          - {label: "Low season extra guests", name: "low-season-extra-guests", widget: "string"}
+          - {label: "Layout", name: "summer-season", widget: "hidden"}
+          - {label: "Summer season price", name: "summer-season-price", widget: "string"}
+          - {label: "Summer season extra guests", name: "summer-season-extra-guests", widget: "string"}
+          - {label: "Layout", name: "winter-season", widget: "hidden"}
+          - {label: "Winter season price", name: "winter-season-price", widget: "string"}
+          - {label: "Winter season extra guests", name: "winter-season-extra-guests", widget: "string"}
+          - {label: "Layout", name: "winter-season-flexible-dates", widget: "hidden"}
+          - {label: "Layout", name: "winter-season-electricity", widget: "hidden"}
+          - {label: "Layout", name: "guests", widget: "hidden"}
+          - {label: "Layout", name: "guests-included", widget: "hidden"}
+          - {label: "Layout", name: "extra-guests", widget: "hidden"}
+          - {label: "Layout", name: "flexible-dates", widget: "hidden"}
+          - {label: "Layout", name: "tourist-tax", widget: "hidden"}
+          - {label: "Layout", name: "tourist-tax-detail", widget: "hidden"}
+          - {label: "Layout", name: "included-basics", widget: "hidden"}
+          - {label: "Layout", name: "electricity", widget: "hidden"}
+          - {label: "Layout", name: "wood", widget: "hidden"}
+          - {label: "Body", name: "body", widget: "hidden"}

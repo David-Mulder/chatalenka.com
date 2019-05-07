@@ -1,7 +1,6 @@
 ---
 layout: pricing.html
 title: Pricing
-abc: test2
 collection: aboutus
 low-season: Low season
 low-season-price: € 125,00
@@ -25,15 +24,6 @@ electricity: Electricity
 wood: Wood for fireplace
 
 ---
-
-<!-- English **pricing**
-===============
-Welcome to a paragraph
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3 -->
 
 - Prices are valid for stays of three nights or more.
 - If you stay for 1 night + 50% + € 25.00 cleaning  
