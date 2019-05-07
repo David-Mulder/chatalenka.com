@@ -1,5 +1,6 @@
 ---
 layout: page.html
+collection: posts
 title: Thermal water attractions in Slovakia
 ---
 Top 3 thermal baths or hot springs in Slovakia
