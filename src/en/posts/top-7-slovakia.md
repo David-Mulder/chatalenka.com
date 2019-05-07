@@ -1,10 +1,10 @@
 ---
 layout: page.html
-title: Active
 collection: posts
+title: Top 7 things to do in Slovakia
 ---
 
-Top 10 things to do in **Slovakia**
+Top 7 things to do in **Slovakia**
 ===================================
 Co-working paradigm piverate innovate affordances user centered design personas pair programming Steve Jobs iterate earned media. Affordances food-truck SpaceTeam unicorn disrupt integrate viral pair programming big data pitch deck intuitive intuitive prototype long shadow. Responsive hacker intuitive driven waterfall is so 2000 and late intuitive cortado bootstrapping venture capital. Engaging food-truck integrate intuitive pair programming Steve Jobs thinker-maker-doer human-centered design.
 
