@@ -1,7 +1,7 @@
 ---
 layout: page.html
-title: Active
 collection: posts
+title: Top Slovak restaurants in Liptov
 ---
 
 Top Slovak restaurants in Liptov
