@@ -2,18 +2,18 @@
 title: Home
 layout: home.html
 slides:
-  - button2Link: /en/posts/top-7-slovakia/
-    button2Text: 7 things you must try in Slovakia
-    buttonLink: /en/book-now/
-    buttonText: Book now
+  - buttonLink: /en/posts/top-7-slovakia/
+    buttonText: 7 things you must try in Slovakia
     description: We would love to welcome you.
     header: |-
       This is Slovakia.
       A country worth visiting.
     photo: /img/slovakia.jpg
     style: center
-  - buttonLink: /en/photos
-    buttonText: See the photos
+  - button2Link: /en/photos
+    button2Text: See the photos
+    buttonLink: /en/book-now/
+    buttonText: Book now
     description: And welcome you in our modern vacation villa in the heart of Slovakia
     header: Allow us to be your hosts.
     photo: /img/front-clean.jpg

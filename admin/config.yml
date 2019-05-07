@@ -83,6 +83,16 @@ collections:
               - label: Button link
                 name: buttonLink
                 widget: string
+              - label: Button2 text
+                name: button2Text
+                widget: string
+                required: false
+                hint: Not available on center slide style
+              - label: Button2 link
+                name: button2Link
+                widget: string
+                required: false
+                hint: Not available on center slide style
           - label: "Review scores"
             name: "reviews"
             widget: "list"
