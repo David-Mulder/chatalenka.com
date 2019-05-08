@@ -38,9 +38,12 @@ contentBlocks:
       Everybody needs some fun and relaxation during their vacation. The Liptov
       area provides the best of both worlds.
     link: /en/fun-relax
+    linkText: Read more
     photo1icon: far fa-laugh-beam
     photo1photo: /img/surroundings - tatralandia.jpg
-    photo1text: asdf
+    photo1text: >-
+      Enjoy countless of activities for young and old and make sure you fully
+      enjoy your vacation.
     photo1title: Fun
     photo2icon: far fa-heart
     photo2photo: /img/surroundings - relax.jpg
