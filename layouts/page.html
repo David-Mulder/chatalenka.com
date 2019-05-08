@@ -34,6 +34,107 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&amp;#038;&language=en"></script>
   <script src="/vendors/googlemap/google-maps.js"></script>
   {{/if}}
+  <script>
+    $(window).on('load', function() {
+      WebFont.load({
+        google: {
+          families: ['Indie Flower'],
+          text: 'AaÁáÄäBbCcČčDdĎďDzdzDždžEeÉéFfGgHhChchIiÍíJjKkLlĹĺĽľMmNnŇňOoÓóÔôPpQq1RrŔŕSsŠšTtŤťUuÚúVvWwXxYyÝýZzŽž!&. 1234567890€/+()%-'
+        },
+        fontactive: function() {
+          $('.post-content img[title][alt]').each(function(index, img) {
+            var $img = $(img);
+            var title = $img.attr('title');
+            if (title && title.substring(0,5) === 'arrow') {
+              var settings = title.split('|');
+              var offset = $img.offset();
+              var size = {
+                width: $img.width(),
+                height: $img.height()
+              };
+              console.log(img, $img.offset(), size);
+              var margin = {
+                horizontal: 20,
+                vertical: 10
+              };
+              var arrowDefinitions = {
+                left: {
+                  size: 80,
+                  direction: 'left',
+                  textDirection: 'up',
+                  textMargin: 90,
+                  file: '/img/arrows/left-up.svg'
+                },
+                right: {
+                  size: 80,
+                  direction: 'right',
+                  textDirection: 'up',
+                  textMargin: 90,
+                  file: '/img/arrows/right-up.svg'
+                }
+              };
+              var arrowDefinition = arrowDefinitions[settings[1]];
+              var $arrow = $('<img src="' + arrowDefinition.file + '" />');
+              $arrow.width(arrowDefinition.size);
+              $arrow.css('position', 'absolute');
+              var arrowLeft = offset.left; 
+              var arrowTop = offset.top;
+              if (arrowDefinition.direction === 'left' || arrowDefinition.direction === 'right') {
+                arrowTop += size.height / 2 - arrowDefinition.size / 2;
+              }
+              if (arrowDefinition.direction === 'right') {
+                arrowLeft += size.width + margin.horizontal;
+                // arrowTop += size.height / 2 - arrowDefinition.size / 2;
+              }
+              if (arrowDefinition.direction === 'left') {
+                arrowLeft -= arrowDefinition.size + margin.horizontal;
+                // arrowTop += size.height / 2 - arrowDefinition.size / 2;
+              }
+              $arrow.css('left', arrowLeft);
+              $arrow.css('top', arrowTop);
+              $arrow.css('z-index', 100);
+
+              var $text = $('<span></span>');
+              $text.text(settings[2]);
+              $text.css('opacity', 0);
+              $text.css('font-family', 'Indie Flower');
+              $text.css('max-width', '150px');
+              $text.css('text-align', 'center');
+              if (arrowDefinition.direction === 'right') {
+                $text.css('transform', 'rotate('+ (4 + Math.round(Math.random() * 3)) +'deg)');
+              }
+              if (arrowDefinition.direction === 'left') {
+                $text.css('transform', 'rotate(-'+ (4 + Math.round(Math.random() * 3)) +'deg)');
+              }
+              $text.prependTo('body');
+              console.log($text.width());
+
+              $text.css('position', 'absolute');
+              var left = offset.left;
+              if (arrowDefinition.direction === 'right') {
+                left += size.width + margin.horizontal;
+              }
+              if (arrowDefinition.direction === 'left') {
+                left -= margin.horizontal + $text.width();
+              }
+              $text.css('left', left);
+              var top = offset.top + size.height / 2 - arrowDefinition.size / 2;
+              if (arrowDefinition.textDirection === 'up') {
+                top -= $text.height();
+                // top -= arrowDefinition.textMargin;
+              }
+              $text.css('top', top);
+              $text.css('opacity', 1);
+
+              $arrow.prependTo('body');
+            }
+            
+          });
+        }
+      });
+      
+    });
+  </script>
 </body>
 
 </html>
