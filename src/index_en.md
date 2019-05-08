@@ -68,5 +68,23 @@ contentBlocks:
       worth tasting.
     photo2title: Food
     title: 'Experience a new **culture**,'
+  - description: >-
+      What better place to get active than in one of the most beautiful
+      countries in Europe.
+    link: /en/active
+    linkText: Learn more
+    photo1icon: fas fa-skiing
+    photo1photo: /img/surroundings - skipark.jpg
+    photo1text: >-
+      A gondola lift will take you straight from our vacation villa to skipark
+      Malino Brdo.
+    photo1title: Wintersports
+    photo2icon: fa fa-bicycle
+    photo2photo: /img/surroundings - bikepark.jpg
+    photo2text: >-
+      In Summer Malino Brdo transforms in one of the most popular bikeparks in
+      central Europe.
+    photo2title: Mountainbiking
+    title: and get **active**.
 ---
 
