@@ -7,14 +7,14 @@ title: Top Slovak restaurants in Liptov
 Top Slovak restaurants in Liptov
 ===================================
 
-![alt text](/img/surroundings - restaurants - dobrehopastiera.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - restaurants - dobrehopastiera.jpg "arrow|right|just 5 minutes by car from Chata Lenka")
 
 1\. Koliba U Dobreho Pastiera
 =============================
 
 Website: [udobrehopastiera.sk](https://udobrehopastiera.sk)
 
-![alt text](/img/surroundings - restaurants - salaskrajinka.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - restaurants - salaskrajinka.jpg "arrow|left|just 10 minutes by car from Chata Lenka")
 
 2\. Salas Krajinka
 ==================
@@ -25,7 +25,7 @@ Website: [salaskrajinka.sk](https://salaskrajinka.sk)
 3\. Slovenska Koliba Jasna
 =========================
 
-![alt text](/img/surroundings - restaurants - kolibalikava.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - restaurants - kolibalikava.jpg "arrow|right|just 5 minutes by car from Chata Lenka")
 
 4\. Restaurant Koliba Likava
 ============================

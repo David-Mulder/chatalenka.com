@@ -5,7 +5,7 @@ collection: posts
 ---
 Top 3 thermal baths or hot springs in Slovakia
 ==============================================
-![alt text](/img/surroundings - besenova.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - besenova.jpg "arrow|left|just 15 minutes from Chata Lenka!")
 1\. Aquapark **Besenova**
 ==============================================
 Co-working paradigm piverate innovate affordances user centered design personas pair programming Steve Jobs iterate earned media. Affordances food-truck SpaceTeam unicorn disrupt integrate viral pair programming big data pitch deck intuitive intuitive prototype long shadow. Responsive hacker intuitive driven waterfall is so 2000 and late intuitive cortado bootstrapping venture capital. Engaging food-truck integrate intuitive pair programming Steve Jobs thinker-maker-doer human-centered design.

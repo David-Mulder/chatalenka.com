@@ -5,7 +5,8 @@ title: Caves of Liptov
 ---
 The caves in and near Liptov
 ==============================================
-![alt text](/img/surroundings - demanovska.jpg "Logo Title Text 1")
+
+![alt text](/img/surroundings - demanovska.jpg "arrow|right|It's a half an hour drive from Chata Lenka, but well worth a visit")
 
 1\. Demänovská Cave of Liberty
 ==============================================
@@ -17,7 +18,7 @@ Demänovská Cave of Liberty is the most visited cave in Slovakia which has been
 ==============================================
 On the right side of the Demänovská valley below the northern slopes of the low tatras another cave is open to the public: Demänovská ľadová jaskyňa. The ice filling the cave year round is over 500 year old and beatiful to behold. Do make sure to bring a good jacket in summer though.
 
-![alt text](/img/surroundings - jaskyna-mrtvych-netopierov-outside.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - jaskyna-mrtvych-netopierov-outside.jpg "arrow|left|Sincere personal favourite!!!")
 
 3\. Cave of the dead bats
 ==============================================

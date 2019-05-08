@@ -9,130 +9,186 @@
 <body class="blog--single blog--single__full">
   {{>header}}
   {{#if showMap}}
-  <div id="aheto-map" class="aheto-map  " data-zoom="{{#if zoom-level}}{{zoom-level}}{{/if}}{{#unless zoom-level}}8{{/unless}}" data-center-lat="48.695733" data-center-lng="19.248894" data-marker-img="" data-active-marker-img="" data-lat-0="49.0707032" data-lng-0="19.2738341" data-img-0="/img/inner-pages/contact/marker-1.png"
-    data-active-0="" data-title-0="" data-desc-0="">
+  <div id="aheto-map" class="aheto-map  "
+    data-zoom="{{#if zoom-level}}{{zoom-level}}{{/if}}{{#unless zoom-level}}8{{/unless}}" data-center-lat="48.695733"
+    data-center-lng="19.248894" data-marker-img="" data-active-marker-img="" data-lat-0="49.0707032"
+    data-lng-0="19.2738341" data-img-0="/img/inner-pages/contact/marker-1.png" data-active-0="" data-title-0=""
+    data-desc-0="">
   </div>
   {{/if}}
   <div class="container-fluid border-top">
   </div>
   <div class="post-content">
-    <div class="container" {{#if showMap}}style="position: relative; top: -100px; background: white;"{{/if}}>
+    <div class="container" {{#if showMap}}style="position: relative; top: -100px; background: white;" {{/if}}>
       <!-- <div class="row margin-lg-115t margin-lg-55b margin-md-35b margin-md-70t margin-sm-50t">
         <div class="col-md-8 offset-md-2">
           <div class="aheto-heading t-center "> -->
-            <!-- <h2 class="aheto-heading__title    t-light ">Built on passion and <span>ingenuity</span></h2>
+      <!-- <h2 class="aheto-heading__title    t-light ">Built on passion and <span>ingenuity</span></h2>
             <p class="aheto-heading__desc   ">TommusRhodus is an elite author known for offering high-quality, high-value
               products backed by timely and personable support. Recognised and awarded by Envato on multiple occasions</p> -->
-              {{{contents}}}
-          <!-- </div>
+      {{{contents}}}
+      <!-- </div>
         </div>
       </div> -->
     </div>
   </div>
   {{>footer}}
   {{#if showMap}}
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&amp;#038;&language=en"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARwCmK-LlGIH8Mv1ac4VyceMYUgg9vStM&amp;#038;&language=en"></script>
   <script src="/vendors/googlemap/google-maps.js"></script>
   {{/if}}
   <script>
-    $(window).on('load', function() {
+    $(window).on('load', function () {
       WebFont.load({
         google: {
           families: ['Indie Flower'],
           text: 'AaÁáÄäBbCcČčDdĎďDzdzDždžEeÉéFfGgHhChchIiÍíJjKkLlĹĺĽľMmNnŇňOoÓóÔôPpQq1RrŔŕSsŠšTtŤťUuÚúVvWwXxYyÝýZzŽž!&. 1234567890€/+()%-'
         },
-        fontactive: function() {
-          $('.post-content img[title][alt]').each(function(index, img) {
-            var $img = $(img);
-            var title = $img.attr('title');
-            if (title && title.substring(0,5) === 'arrow') {
-              var settings = title.split('|');
-              var offset = $img.offset();
-              var size = {
-                width: $img.width(),
-                height: $img.height()
-              };
-              console.log(img, $img.offset(), size);
-              var margin = {
-                horizontal: 20,
-                vertical: 10
-              };
-              var arrowDefinitions = {
-                left: {
-                  size: 80,
-                  direction: 'left',
-                  textDirection: 'up',
-                  textMargin: 90,
-                  file: '/img/arrows/left-up.svg'
-                },
-                right: {
-                  size: 80,
-                  direction: 'right',
-                  textDirection: 'up',
-                  textMargin: 90,
-                  file: '/img/arrows/right-up.svg'
+        fontactive: function () {
+          var onResize = function() {
+            $('.arrow-functions').remove();
+            $('.post-content img[title][alt]').each(function (index, img) {
+              var $img = $(img);
+              var title = $img.data('arrow-config') || $img.attr('title');
+              if (title && title.substring(0, 5) === 'arrow') {
+                var settings = title.split('|');
+                $img.data('arrow-config', title);
+                $img.attr('title', settings[2]);
+                if ($(window).width() < 1400) {
+                  settings[1] = 'under-right';
                 }
-              };
-              var arrowDefinition = arrowDefinitions[settings[1]];
-              var $arrow = $('<img src="' + arrowDefinition.file + '" />');
-              $arrow.width(arrowDefinition.size);
-              $arrow.css('position', 'absolute');
-              var arrowLeft = offset.left; 
-              var arrowTop = offset.top;
-              if (arrowDefinition.direction === 'left' || arrowDefinition.direction === 'right') {
-                arrowTop += size.height / 2 - arrowDefinition.size / 2;
-              }
-              if (arrowDefinition.direction === 'right') {
-                arrowLeft += size.width + margin.horizontal;
-                // arrowTop += size.height / 2 - arrowDefinition.size / 2;
-              }
-              if (arrowDefinition.direction === 'left') {
-                arrowLeft -= arrowDefinition.size + margin.horizontal;
-                // arrowTop += size.height / 2 - arrowDefinition.size / 2;
-              }
-              $arrow.css('left', arrowLeft);
-              $arrow.css('top', arrowTop);
-              $arrow.css('z-index', 100);
+                var $text = $('<span></span>');
+                $text.css('font-family', 'Indie Flower');
+                $text.text(settings[2]);
+                $text.css('transition', '1s linear opacity');
+                $text.css('opacity', 0);
+                var arrowDefinitions = {
+                  left: {
+                    size: 80,
+                    direction: 'left',
+                    textDirection: 'up',
+                    textMargin: 90,
+                    file: '/img/arrows/left-up.svg'
+                  },
+                  right: {
+                    size: 80,
+                    direction: 'right',
+                    textDirection: 'up',
+                    textMargin: 90,
+                    file: '/img/arrows/right-up.svg'
+                  },
+                  'under-right': {
+                    size: 32,
+                    direction: 'right',
+                    textDirection: 'up',
+                    textMargin: 90,
+                    file: '/img/arrows/under-right.svg'
+                  }
+                };
+                var arrowDefinition = arrowDefinitions[settings[1]];
+                var $arrow = $('<img src="' + arrowDefinition.file + '" />');
+                $arrow.css('transition', '1s linear opacity');
+                $arrow.css('opacity', '0');
+                $arrow.width(arrowDefinition.size);
+                if (settings[1] === "under-left" || settings[1] === "under-right") {
+                  var $div = $('<div></div>');
+                  $div.append($arrow);
+                  $div.append($text);
+                  $div.css('display', 'flex');
+                  $div.addClass('arrow-functions');
+                  $arrow.css('vertical-align', 'top');
+                  $arrow.css('align-self', 'flex-start');
+                  $text.css('transform', 'rotate(-.5deg)');
+                  $text.css('transform-origin', 'left middle');
+                  $text.css('display', 'inline-block');
+                  $text.css('padding-top', '5px');
+                  $text.css('padding-left', '5px');
+                  $div.insertAfter($img);
+                  setTimeout(function() {
+                    $arrow.css('opacity', 1);
+                    $text.css('opacity', 1);
+                  }, 0)
+                }
+                if (settings[1] === "left" || settings[1] === "right") {
 
-              var $text = $('<span></span>');
-              $text.text(settings[2]);
-              $text.css('opacity', 0);
-              $text.css('font-family', 'Indie Flower');
-              $text.css('max-width', '150px');
-              $text.css('text-align', 'center');
-              if (arrowDefinition.direction === 'right') {
-                $text.css('transform', 'rotate('+ (4 + Math.round(Math.random() * 3)) +'deg)');
-              }
-              if (arrowDefinition.direction === 'left') {
-                $text.css('transform', 'rotate(-'+ (4 + Math.round(Math.random() * 3)) +'deg)');
-              }
-              $text.prependTo('body');
-              console.log($text.width());
+                  $text.addClass('arrow-functions');
+                  $arrow.addClass('arrow-functions');
+                  var offset = $img.offset();
+                  var size = {
+                    width: $img.width(),
+                    height: $img.height()
+                  };
+                  console.log(img, $img.offset(), size);
+                  var margin = {
+                    horizontal: 20,
+                    vertical: 10
+                  };
+                  $arrow.css('position', 'absolute');
+                  var arrowLeft = offset.left;
+                  var arrowTop = offset.top;
+                  if (arrowDefinition.direction === 'left' || arrowDefinition.direction === 'right') {
+                    arrowTop += size.height / 2 - arrowDefinition.size / 2;
+                  }
+                  if (arrowDefinition.direction === 'right') {
+                    arrowLeft += size.width + margin.horizontal;
+                    // arrowTop += size.height / 2 - arrowDefinition.size / 2;
+                  }
+                  if (arrowDefinition.direction === 'left') {
+                    arrowLeft -= arrowDefinition.size + margin.horizontal;
+                    // arrowTop += size.height / 2 - arrowDefinition.size / 2;
+                  }
+                  $arrow.css('left', arrowLeft);
+                  $arrow.css('top', arrowTop);
+                  $arrow.css('z-index', 100);
 
-              $text.css('position', 'absolute');
-              var left = offset.left;
-              if (arrowDefinition.direction === 'right') {
-                left += size.width + margin.horizontal;
-              }
-              if (arrowDefinition.direction === 'left') {
-                left -= margin.horizontal + $text.width();
-              }
-              $text.css('left', left);
-              var top = offset.top + size.height / 2 - arrowDefinition.size / 2;
-              if (arrowDefinition.textDirection === 'up') {
-                top -= $text.height();
-                // top -= arrowDefinition.textMargin;
-              }
-              $text.css('top', top);
-              $text.css('opacity', 1);
+                  $text.css('max-width', '150px');
+                  $text.css('text-align', 'center');
+                  if (arrowDefinition.direction === 'right') {
+                    $text.css('transform', 'rotate(' + (4 + Math.round(Math.random() * 3)) + 'deg)');
+                  }
+                  if (arrowDefinition.direction === 'left') {
+                    $text.css('transform', 'rotate(-' + (4 + Math.round(Math.random() * 3)) + 'deg)');
+                  }
+                  $text.prependTo('body');
+                  console.log($text.width());
 
-              $arrow.prependTo('body');
-            }
-            
+                  $text.css('position', 'absolute');
+                  var left = offset.left;
+                  if (arrowDefinition.direction === 'right') {
+                    left += size.width + margin.horizontal;
+                  }
+                  if (arrowDefinition.direction === 'left') {
+                    left -= margin.horizontal + $text.width();
+                  }
+                  $text.css('left', left);
+                  var top = offset.top + size.height / 2 - arrowDefinition.size / 2;
+                  if (arrowDefinition.textDirection === 'up') {
+                    top -= $text.height();
+                    // top -= arrowDefinition.textMargin;
+                  }
+                  $text.css('top', top);
+                  $arrow.prependTo('body');
+
+                  $text.css('opacity', 1);
+                  $arrow.css('opacity', 1);
+                   
+                }
+              }
+
+            });
+          }
+
+          $(window).on('resize', function() {
+            // console.log('on resize');
+            onResize();
           });
+          // window.a = onResize;
+          onResize();
+          
         }
       });
-      
+
     });
   </script>
 </body>

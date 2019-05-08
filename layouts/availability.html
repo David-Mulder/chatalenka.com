@@ -45,10 +45,22 @@
             locale: '{{locale}}',
             events: {
                 googleCalendarId: 'si16csiohho0noc8u59jr0lio4@group.calendar.google.com'
+            },
+            eventRender: function(info) {
+              console.log(info);
+              console.log($(info.el).find('.fc-time').get(0));
+              const time = $(info.el).find('.fc-time');
+              if (time.get(0)) {
+                time.text('\xa0Booked');
+              }
+              info.el.textContent 
+            },
+            eventClick: function(ev) {
+              ev.jsEvent.stopPropagation();
+              ev.jsEvent.preventDefault();
             }
         });
         calendar.render();
-        console.log(calendar);
     </script>
     {{>footer}}
 

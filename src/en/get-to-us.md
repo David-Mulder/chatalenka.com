@@ -8,7 +8,7 @@ zoom-level: 5
 
 How to get to us? 
 ===================================
-Despite being the heart of Europe, Slovakia and Liptov are "off-the-beaten-track" and thus getting there can be harder than the more tourist and Chinese filled tourist destinations.
+Despite being the heart of Europe, Slovakia and Liptov are "off-the-beaten-track" and thus getting there can be harder than the more tourist-y destinations. ALready booked and need the specific address, [check our contact page](/en/book-now/).
 
 From the United Kingdom
 =======================

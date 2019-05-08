@@ -27,13 +27,13 @@ The Liptov Area is surrounded on all side by mountains.
 
 Source: Brian and Noelle from wanderingon.com
 
-Slovakia knows many traditional villages with Vlkolinec being the most famous of all. Vlkolinec has been recognized as an UNESCO heritage site and...
+Slovakia knows many traditional villages with Vlkolinec being the most famous of all. Vlkolinec has been recognized as an UNESCO heritage site and contains 45 traditionally Slovak log houses, a folk museum and an open air theather. [Read more about the activities in the area](/en/posts/top-things-to-do-in-hrabovo/)
 
 ![alt text](/img/surroundings - besenova.jpg "Logo Title Text 1")
 
-3\. Visit one of the **thermal baths** and **hot springs**
+3\. Visit one of the **thermal spas** and **hot springs**
 ===========
-Co-working paradigm piverate innovate affordances user centered design personas pair programming Steve Jobs iterate earned media. Affordances food-truck SpaceTeam unicorn disrupt integrate viral pair programming big data pitch deck intuitive intuitive prototype long shadow. Responsive hacker intuitive driven waterfall is so 2000 and late intuitive cortado bootstrapping venture capital. Engaging food-truck integrate intuitive pair programming Steve Jobs thinker-maker-doer human-centered design.
+Slovakia is famous for it's thermal spas which have been visited for their claimed healing properties for decades. Many of those have now developed into modern aqua parks which are popular with both young and old. [Read more about the best spas and aquaparks in Slovakia](/en/posts/top-castles-liptov/)
 
 ![alt text](/img/surroundings - spis.jpg "Logo Title Text 1")
 
@@ -45,7 +45,7 @@ Co-working paradigm piverate innovate affordances user centered design personas 
 
 5\. Go **spelunking**
 ===========
-Co-working paradigm piverate innovate affordances user centered design personas pair programming Steve Jobs iterate earned media. Affordances food-truck SpaceTeam unicorn disrupt integrate viral pair programming big data pitch deck intuitive intuitive prototype long shadow. Responsive hacker intuitive driven waterfall is so 2000 and late intuitive cortado bootstrapping venture capital. Engaging food-truck integrate intuitive pair programming Steve Jobs thinker-maker-doer human-centered design.
+Slovakia is home to many gorgeous and fun caves. [...] [Read about some of our favourite caves in Slovakia](/en/posts/top-caves-liptov/)
 
 ![alt text](/img/surroundings - halusky.jpg "Logo Title Text 1")
 

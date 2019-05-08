@@ -7,7 +7,7 @@ How to experience traditional Slovak culture in Liptov
 ======================================================
 Liptov is one of the best areas to experience traditional culture in Slovakia, but you still need to know where to go for the best possible experience. We have tried compiling the best possible list for you.
 
-![alt text](/img/surroundings - vlkolinec.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - vlkolinec.jpg "arrow|right|around a one-hour hike from Chata Lenka, or far less if you take the gondola lift")
 
 1\. UNESCO Heritage site **Vlkolinec**
 ==============================================
@@ -16,17 +16,17 @@ Liptov is one of the best areas to experience traditional culture in Slovakia, b
 
 Source: Brian and Noelle from wanderingon.com
 
-![alt text](/img/surroundings - halusky.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - halusky.jpg "")
 
 2\. **Halusky** and other traditional food
 ==============================================
 
-![alt text](/img/surroundings - salas-krajinka2.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - salas-krajinka2.jpg "arrow|right|It's just an eight minute drive")
 
 3\. Combine food with culture at **Salaš Krajinka**
 ==============================================
 
-![alt text](/img/surroundings - cheese.jpg "Logo Title Text 1")
+![alt text](/img/surroundings - cheese.jpg "arrow|left|It's seriously delicious!")
 
 4\. Go to the supermarket and find **Brynzda**, **smoked cheeses** and more
 ==============================================
