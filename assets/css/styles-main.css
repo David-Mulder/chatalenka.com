@@ -43707,7 +43707,7 @@ button:hover {
 }
 
 .main-header .wpml-ls-legacy-dropdown {
-  margin-top: 22px;
+  margin-top: 35px;
 }
 
 .main-header .wpml-ls-legacy-dropdown:hover .wpml-ls-sub-menu {
@@ -43753,7 +43753,11 @@ button:hover {
   height: 23px;
   margin-right: 13px;
 }
-
+@media screen and (max-width: 1750px) {
+  .main-header .wpml-ls-legacy-dropdown {
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .main-header .widget {
     margin-bottom: 0px;
@@ -43782,6 +43786,10 @@ button:hover {
   }
   .main-header .widget_text {
     display: none;
+  }
+  .main-header .wpml-ls-legacy-dropdown {
+    margin-top: 22px;
+    margin-right: 0px;
   }
 }
 
