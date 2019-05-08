@@ -1,9 +1,9 @@
 ---
 layout: page.html
-title: How to get there?
 collection: aboutus
-zoom-level: 5
+title: How to get there?
 showMap: true
+zoom-level: 5
 ---
 
 How to get to us? 
@@ -21,6 +21,7 @@ In general the best option from Germany is to drive by car. Depending on where y
 
 From Poland
 ===========
+In general the best option from Poland is to drive by car.
 
 From Israel
 ===========
