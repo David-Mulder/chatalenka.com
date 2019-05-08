@@ -83,6 +83,12 @@ let a = Metalsmith(__dirname)
   //   })
   // ))
   .use(plugin({}))
+  .use((() => {
+    return function(files, metalsmith, done) {
+      files['en\\index.html'] = files['index.html'];
+      setImmediate(done);
+    }
+  })())
   .use(layouts({
     engine: 'handlebars'
   }))
