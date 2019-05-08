@@ -106,7 +106,55 @@
   <div class="container-fluid border-top clearfix">
     </div>
   <div class="container-fluid border-bottom">
+    {{#each contentBlocks}}
     <div class="container">
+        <div class="row margin-lg-140t margin-sm-50t margin-md-80t padding-lg-80b padding-md-80b padding-sm-50b">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12 margin-lg-30b">
+                <div class="aht-heading aht-heading--main ">
+                  <h2 class="aht-heading__title">{{{markdown title true}}}</h2>
+                  <p class="aht-heading__desc">{{description}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 margin-md-30b">
+                <div class="aheto-btn-container  ">
+                  <a href="{{link}}" class="aheto-btn  aheto-btn--underline">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 margin-md-30b">
+            <div class="aht-cb aht-cb--main main-home-cb ">
+              <div class="aht-cb__img">
+                <img class="js-bg" src="{{photo1photo}}" alt="Content block image" style="display: none;">
+              </div>
+              <div class="aht-cb__caption">
+                <i class="aht-cb__icon icon {{photo1icon}}"></i>
+                <h5 class="aht-cb__title">{{photo1title}}</h5>
+              </div>
+              <p class="aht-cb__desc">{{photo1text}}</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="aht-cb aht-cb--main main-home-cb ">
+              <div class="aht-cb__img">
+                <img class="js-bg" src="{{photo2photo}}" alt="Content block image" style="display: none;">
+              </div>
+              <div class="aht-cb__caption">
+                <i class="aht-cb__icon icon {{photo2icon}}"></i>
+                <h5 class="aht-cb__title">{{photo2title}}</h5>
+              </div>
+              <p class="aht-cb__desc">{{photo2text}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+    <!-- <div class="container">
       <div class="row margin-lg-140t margin-sm-50t margin-md-80t padding-lg-80b padding-md-80b padding-sm-50b">
         <div class="col-md-4">
           <div class="row">
@@ -249,7 +297,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
   </div>
   {{>footer}}
 

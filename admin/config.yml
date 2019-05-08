@@ -106,6 +106,61 @@ collections:
                 min: 5
                 max: 10
                 step: 0.1
+          - label: body
+            name: contentBlocks
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+              - label: Link text
+                name: linkText
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+              - name: photo1photo
+                label: Left photo
+                widget: image
+              - name: photo1icon
+                label: Left title icon
+                widget: select
+                options: 
+                  - far fa-laugh-beam
+                  - far fa-heart
+                  - far fa-flag
+                  - fas fa-utensils
+                  - fas fa-skiing
+                  - fa fa-bicycle
+              - name: photo1title
+                label: Left title
+                widget: string
+              - name: photo1text
+                label: Left text
+                widget: text
+              - name: photo2photo
+                label: Left photo
+                widget: image
+              - name: photo2icon
+                label: Left title icon
+                widget: select
+                options: 
+                  - far fa-laugh-beam
+                  - far fa-heart
+                  - far fa-flag
+                  - fas fa-utensils
+                  - fas fa-skiing
+                  - fa fa-bicycle
+              - name: photo2title
+                label: Left title
+                widget: string
+              - name: photo2text
+                label: Left text
+                widget: text
+              
       - label: "Prices"
         name: "pricing"
         file: "src/en/pricing.md"

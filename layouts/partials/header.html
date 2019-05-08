@@ -11,16 +11,16 @@ test: {{this.title}}
                         <nav class="no-menu"></nav>
                         <div class="widget widget_text">
                             <div class="textwidget">
-                                <h6>Phone: <a href="tel:+421907030075">+421 907 030 075</a></h6>
+                                <h6>{{translate locale 'phone'}}: <a href="tel:+421907030075">+421 907 030 075</a></h6>
                             </div>
                         </div>
                         <div class="widget widget_text">
                             <div class="textwidget">
-                                <h6>Email: <a href="mailto:chatalenka@gmail.com">chatalenka@gmail.com</a></h6>
+                                <h6>{{translate locale 'email'}}: <a href="mailto:chatalenka@gmail.com">chatalenka@gmail.com</a></h6>
                             </div>
                         </div>
                         <div class="registartion">
-                            <a href="{{locale}}/book-now/">Book now</a>
+                            <a href="{{locale}}/book-now/">{{translate locale 'booknow'}}</a>
                         </div>
                         <!-- <div class="log-in">
                     <a href="#">Log in</a>
@@ -73,7 +73,7 @@ test: {{this.title}}
                         <nav class="menu-home-page-container">
                             <ul class="main-menu main-menu--mobile-view  main-menu--dark main-menu--inline main-menu--ci-line-abow main-menu--ddt-default main-menu--ddc-white">
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item--mega-menu">
-                                    <a href="{{homelink locale}}">Home</a>
+                                    <a href="{{homelink locale}}">{{translate locale 'home'}}</a>
                                     <!-- <div class="sub-menu menu-depth-1 mega-menu">
                         <div class="mega-menu__col">
                           <h4 class="mega-menu__title"> Menu Item 1</h4>
@@ -93,7 +93,7 @@ test: {{this.title}}
                       </div> -->
                                 </li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                    <a href="/{{locale}}/the-villa/">About us</a>
+                                    <a href="/{{locale}}/the-villa/">{{translate locale 'aboutus'}}</a>
                                     <ul class="sub-menu menu-depth-1">
                                         {{#each (lookup (lookup . locale) 'aboutus')}}
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom">
@@ -106,7 +106,7 @@ test: {{this.title}}
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                    <a href="/{{locale}}/photos">Photos</a>
+                                    <a href="/{{locale}}/photos">{{translate locale 'photos'}}</a>
                                     <ul class="sub-menu menu-depth-1">
                                         {{#each (lookup (lookup . locale) 'photos')}}
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom">
@@ -115,7 +115,7 @@ test: {{this.title}}
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
-                                    <a href="/{{locale}}/fun-relax/">Surroundings</a>
+                                    <a href="/{{locale}}/fun-relax/">{{translate locale 'surroundings'}}</a>
                                     <ul class="sub-menu menu-depth-1">
                                         {{#each (lookup (lookup . locale) 'surroundings')}}
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom">
@@ -131,7 +131,7 @@ test: {{this.title}}
                       </ul>
                     </li>-->
                                 <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                    <a href="/{{locale}}/book-now">Contact us</a>
+                                    <a href="/{{locale}}/book-now">{{translate locale 'contactus'}}</a>
                                     <!-- <ul class="sub-menu menu-depth-1">
                                         <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="contact/contact-simple.html">Contact
                                                 simple</a></li>
