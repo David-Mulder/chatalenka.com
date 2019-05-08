@@ -85,6 +85,6 @@ contentBlocks:
       In Summer Malino Brdo transforms in one of the most popular bikeparks in
       central Europe.
     photo2title: Mountainbiking
-    title: and get **active**.
+    title: And get **active**.
 ---
 
