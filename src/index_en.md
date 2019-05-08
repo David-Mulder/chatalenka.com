@@ -38,7 +38,7 @@ contentBlocks:
       Everybody needs some fun and relaxation during their vacation. The Liptov
       area provides the best of both worlds.
     link: /en/fun-relax
-    linkText: Read more
+    linkText: Learn more
     photo1icon: far fa-laugh-beam
     photo1photo: /img/surroundings - tatralandia.jpg
     photo1text: >-
@@ -50,5 +50,23 @@ contentBlocks:
     photo2text: asdf2
     photo2title: Relax
     title: 'Have **fun & relax**,'
+  - description: >-
+      Slovakia is the beating heart of Europe with a rich culture and history
+      worth experiencing.
+    link: /en/culture
+    linkText: Learn more
+    photo1icon: far fa-flag
+    photo1photo: /img/surroundings - vlkolinec.jpg
+    photo1text: >-
+      A short hike from our villa you can visit the traditionally timeless
+      Slovak village Vlkolinec.
+    photo1title: Unesco Heritage site
+    photo2icon: fas fa-utensils
+    photo2photo: /img/surroundings - jedlo.jpg
+    photo2text: >-
+      From halusky to smoked sheep cheeses, Slovakia offers a lot of unique food
+      worth tasting.
+    photo2title: Food
+    title: 'Experience a new **culture**,'
 ---
 
