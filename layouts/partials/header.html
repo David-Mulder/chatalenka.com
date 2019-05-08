@@ -67,7 +67,7 @@ test: {{this.title}}
                     <a href="{{homelink locale}}" class="aheto-logo aheto-logo--dark main-header__logo">
                         <!-- <img src="img/home/footer-logo-11.png" class="aheto-logo__image logo-blue" alt="">
                   <img src="img/home/logo_w.png" class="aheto-logo__image logo-white" alt=""> -->
-                        <h1 class="aheto-logo__text">Chata Lenka</h1>
+                        <h1 class="aheto-logo__text">Chata&nbsp;Lenka</h1>
                     </a>
                     <div class="main-header__menu-box">
                         <nav class="menu-home-page-container">
@@ -151,11 +151,11 @@ test: {{this.title}}
                             <li tabindex="0" class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown">
                                 <a href="#" class="js-wpml-ls-item-toggle wpml-ls-item-toggle">
                                     <img class="wpml-ls-flag" src="/img/multilang/lang-{{locale}}.png" alt="en" title="English">
-                                    <span class="wpml-ls-native">{{#if (equals locale 'en')}}English{{/if}}{{#if (equals locale 'sk')}}Slovak{{/if}} <i class="icon fas fa-chevron-down"></i></span>
+                                    <span class="wpml-ls-native"><span>{{#if (equals locale 'en')}}English{{/if}}{{#if (equals locale 'sk')}}Slovak{{/if}}</span> <i class="icon fas fa-chevron-down"></i></span>
                                 </a>
                                 <ul class="wpml-ls-sub-menu">
                                     {{#unless (equals locale 'en')}}
-                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-ru wpml-ls-last-item">
+                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-en wpml-ls-last-item">
                                         <a href="/en/">
                                             <img class="wpml-ls-flag" src="/img/multilang/lang-en.png" alt="en" title="English">
                                             <span class="wpml-ls-native">English</span>
@@ -163,7 +163,7 @@ test: {{this.title}}
                                     </li>
                                     {{/unless}}
                                     {{#unless (equals locale 'sk')}}
-                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-de">
+                                    <li class="wpml-ls-slot-sidebar-1 wpml-ls-item wpml-ls-item-sk">
                                         <a href="/sk/">
                                             <img class="wpml-ls-flag" src="/img/multilang/lang-sk.png" alt="sk" title="Slovak">
                                             <span class="wpml-ls-native">Slovak</span>
