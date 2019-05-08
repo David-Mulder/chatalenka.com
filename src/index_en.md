@@ -33,5 +33,19 @@ reviews:
     title: Surroundings
   - score: 9.3
     title: Value
+contentBlocks:
+  - description: >-
+      Everybody needs some fun and relaxation during their vacation. The Liptov
+      area provides the best of both worlds.
+    link: /en/fun-relax
+    photo1icon: far fa-laugh-beam
+    photo1photo: /img/surroundings - tatralandia.jpg
+    photo1text: asdf
+    photo1title: Fun
+    photo2icon: far fa-heart
+    photo2photo: /img/surroundings - relax.jpg
+    photo2text: asdf2
+    photo2title: Relax
+    title: 'Have **fun & relax**,'
 ---
 
