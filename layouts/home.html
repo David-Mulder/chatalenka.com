@@ -15,7 +15,7 @@
           {{#if (equals this.style 'center')}}
           <div class="swiper-slide ">
             <div class="aht-ban aht-ban--main aht-ban--main-low-opacity aht-ban--main-1 t-center">
-              <img class="js-bg" src="{{imagesize this.photo 1600}}" alt="Background">
+              <img class="js-bg" src="{{imagesize this.photo 1600}}" data-image-full-src="{{imagesize this.photo 1640}}" data-image-priority="{{@index}}" alt="Background">
               <div class="aht-ban__content">
                 <h1 class="aht-ban__title">{{{break this.header}}}</h1>
                 <h5 class="aht-ban__desc">{{this.description}}</h5>
@@ -34,7 +34,7 @@
           {{#if (equals this.style 'left')}}
             <div class="swiper-slide ">
               <div class="aht-ban aht-ban--main aht-ban--main-middle-opacity aht-ban--main-3">
-                <img class="js-bg" src="{{imagesize this.photo 1600}}" srcset="{{imagesize this.photo 1600}} 420w" alt="Background">
+                <img class="js-bg" src="{{imagesize this.photo 1600}}" data-image-full-src="{{imagesize this.photo 1640}}" data-image-priority="{{@index}}" alt="Background">
                 <div class="aht-ban__content">
                   <h1 class="aht-ban__title">{{{break this.header}}}</h1>
                   <h5 class="aht-ban__desc">{{this.description}}</h5>
