@@ -393,7 +393,8 @@
   /* IMAGE TO BACKGROUND */
 
   /* ============================ */
-  function changeImgToBg(imgSel, parentSel) {
+  function changeImgToBg(imgSel, parentSel, attr) {
+    attr = attr || 'src';
 
     if (!imgSel) {
       console.info('no img selector');
@@ -410,17 +411,19 @@
         if ('none' == _this.css('display')) {
           return true;
         }
-        console.log(_this.attr('src'));
 
         $parent = _this.closest(parentSel);
         $parent = $parent.length ? $parent : _this.parent();
-        $parent.css('background-image', 'url("' + _this.attr('src') + '")');
+        $parent.css('background-image', 'url("' + _this.attr(attr) + '")');
         _this.hide();
       });
   }
 
   $(window).on('load', function(){
     changeImgToBg('.js-bg');
+  });
+  $(window).on('scroll', function(){
+    changeImgToBg('.js-bg-on-scroll', undefined, 'data-src');
   });
   /* ============================ */
   /* IF TOUCH DEVICE */

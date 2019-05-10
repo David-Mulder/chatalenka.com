@@ -15,7 +15,7 @@
           {{#if (equals this.style 'center')}}
           <div class="swiper-slide ">
             <div class="aht-ban aht-ban--main aht-ban--main-low-opacity aht-ban--main-1 t-center">
-              <img class="js-bg" src="{{imagesize this.photo 1600}}" data-image-full-src="{{imagesize this.photo 1640}}" data-image-priority="{{@index}}" alt="Background">
+              <img class="js-bg" src="{{imagesize this.photo 1080}}" data-image-full-src="{{imagesize this.photo 1640}}" data-image-priority="{{@index}}" alt="Background">
               <div class="aht-ban__content">
                 <h1 class="aht-ban__title">{{{break this.header}}}</h1>
                 <h5 class="aht-ban__desc">{{this.description}}</h5>
@@ -34,7 +34,7 @@
           {{#if (equals this.style 'left')}}
             <div class="swiper-slide ">
               <div class="aht-ban aht-ban--main aht-ban--main-middle-opacity aht-ban--main-3">
-                <img class="js-bg" src="{{imagesize this.photo 1600}}" data-image-full-src="{{imagesize this.photo 1640}}" data-image-priority="{{@index}}" alt="Background">
+                <img class="js-bg" src="{{imagesize this.photo 1080}}" data-image-full-src="{{imagesize this.photo 1640}}" data-image-priority="{{@index}}" alt="Background">
                 <div class="aht-ban__content">
                   <h1 class="aht-ban__title">{{{break this.header}}}</h1>
                   <h5 class="aht-ban__desc">{{this.description}}</h5>
@@ -130,7 +130,7 @@
           <div class="col-md-4 margin-md-30b">
             <div class="aht-cb aht-cb--main main-home-cb ">
               <div class="aht-cb__img">
-                <img class="js-bg" src="{{imagesize photo1photo 1600}}" alt="Content block image" style="display: none;">
+                <img class="js-bg-on-scroll" data-src="{{imagesize photo1photo 410}}" alt="Content block image" style="display: none;">
               </div>
               <div class="aht-cb__caption">
                 <i class="aht-cb__icon icon {{photo1icon}}"></i>
@@ -142,7 +142,7 @@
           <div class="col-md-4">
             <div class="aht-cb aht-cb--main main-home-cb ">
               <div class="aht-cb__img">
-                <img class="js-bg" src="{{imagesize photo2photo 1600}}" alt="Content block image" style="display: none;">
+                <img class="js-bg-on-scroll" data-src="{{imagesize photo2photo 410}}" alt="Content block image" style="display: none;">
               </div>
               <div class="aht-cb__caption">
                 <i class="aht-cb__icon icon {{photo2icon}}"></i>
