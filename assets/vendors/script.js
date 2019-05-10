@@ -414,7 +414,7 @@
 
         $parent = _this.closest(parentSel);
         $parent = $parent.length ? $parent : _this.parent();
-        $parent.css('background-image', 'url("' + _this.attr(attr) + '")');
+        $parent.css('background-image', 'url("' + (_this.attr('data-image-full-src') || _this.attr(attr)) + '")');
         _this.hide();
       });
   }
@@ -422,8 +422,21 @@
   $(window).on('load', function(){
     changeImgToBg('.js-bg');
   });
-  $(window).on('scroll', function(){
+  var lazyImages = function() {
     changeImgToBg('.js-bg-on-scroll', undefined, 'data-src');
+    $('.js-bg-on-scroll').each(function() {
+      $this = $(this);
+      $this.attr('src', $this.attr('data-src'));
+    });
+  }
+  if (screen.availHeight > 1200) {
+    lazyImages();
+  }
+  $(window).on('scroll', function(){
+    lazyImages();
+  });
+  $(window).on('load', function(){
+
   });
   /* ============================ */
   /* IF TOUCH DEVICE */
