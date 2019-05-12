@@ -95,7 +95,7 @@ let a = Metalsmith(__dirname)
   .use(imageResizer({
     glob: "img/**/*.jpg",
     includeSize: true,
-    fake: debug ? false : false,
+    fake: debug ? true : false,
     sizes: [{
       height: 820
     }, {
