@@ -17,7 +17,7 @@ slides:
     description: And welcome you in our modern vacation cottage in the heart of Slovakia
     header: Allow us to be your hosts.
     photo: /img/front-clean.jpg
-    style: left
+    style: center
 reviews:
   - score: 9.3
     title: Location
