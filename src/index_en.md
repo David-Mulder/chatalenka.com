@@ -18,6 +18,12 @@ slides:
     header: Allow us to be your hosts.
     photo: /img/front-clean.jpg
     style: center
+  - buttonLink: en/villa/bedrooms
+    buttonText: Bedrooms
+    description: Is it not nice to relax beside a fireplace after a day of biking or skiing
+    header: A warm place to relax
+    photo: /img/villa - winter-fire.jpg
+    style: center
 reviews:
   - score: 9.3
     title: Location
