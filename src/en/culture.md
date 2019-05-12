@@ -23,7 +23,7 @@ photos:
     title: Castles of Liptov
   - description: And of course visiting an actual museum is also an option
     link: /en/posts/top-culture-liptov
-    photo: /img/surroundings - liptov-museum.jpg
+    photo: /img/surroundings - smopaj.jpg
     title: Liptov Museum
 ---
 

@@ -18,7 +18,7 @@ photos:
     photo: /img/surroundings - likava-hrad.jpg
     title: Castles of Liptov
   - description: And of course visiting an actual museum is also an option
-    photo: /img/surroundings - liptov-museum.jpg
+    photo: /img/surroundings - smopaj.jpg
     title: Liptov Museum
 ---
 
