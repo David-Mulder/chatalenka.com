@@ -5,6 +5,9 @@
 .aheto-pf--metro .aheto-pf__content:before {
   background-color: rgba(34, 34, 34, 0.9);
 }
+
+
+
 .main-header__toolbar-wrap h1,
 .main-header__toolbar-wrap h2,
 .main-header__toolbar-wrap h3,
@@ -26,9 +29,65 @@
 .main-header__toolbar-wrap--solid {
   background-color: #F6F9FF;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-header .hamburger-inner {
+  background-color: #222222;
+}
 .main-header .dropdown-btn {
   color: #999999;
 }
+
 .main-header .main-menu--ddt-default .sub-menu .menu-item > a {
   color: #999999;
   font-weight: 400;
@@ -36,7 +95,7 @@
 .main-header .main-menu--ddt-default .sub-menu .menu-item > a.active {
   color: #222222;
 }
-.main-header .main-menu--ddt-default .sub-menu {
+@media screen and (min-width: 1025px) {.main-header .main-menu--ddt-default .sub-menu {
     -webkit-box-shadow: 0px 0px 13px 0px rgba(42, 116, 237, 0.09);
             box-shadow: 0px 0px 13px 0px rgba(42, 116, 237, 0.09);
   }
@@ -46,18 +105,25 @@
 .main-header .main-menu--ddt-default .sub-menu .menu-item > a.active {
     color: #222222;
   }
+}
 .main-header .menu-item:before {
   background-color: #2A74ED;
 }
 .main-header .menu-item a {
   color: #222222;
 }
-.main-header .menu-item:hover > a {
+@media screen and (min-width: 1025px) {.main-header .menu-item:hover > a {
     color: #2A74ED;
   }
 .main-header .menu-item:hover > .dropdown-btn {
     color: #2A74ED;
   }
+}
+
+
+
+
+
 .main-header .wpml-ls-legacy-dropdown:hover > ul > li > a .wpml-ls-native {
   color: #2A74ED;
 }
@@ -79,6 +145,7 @@
 .aheto-toolbar .aht-socials__item a:hover {
   color: #2A74ED;
 }
+
 .aheto-pricing--tableHead .aheto-pricing__header {
   background: #2A74ED;
 }
@@ -88,15 +155,27 @@
 .aheto-pricing--tableHead .aheto-pricing__list-item h6:before {
   color: #2A74ED;
 }
+
 .aheto-pricing--tableColumn .aheto-pricing__header {
   background-color: #2A74ED;
 }
+
+
+
+
+
+
+
 .aheto-contact--simple .aheto-contact__icon {
   color: #2A74ED;
 }
 .aheto-contact--simple .aheto-contact__info {
   color: #999999;
 }
+
+
+
+
 body .swiper-button-prev {
   color: rgba(42, 116, 237, 0.2);
 }
@@ -118,9 +197,32 @@ body .swiper-button-next:hover {
 .aheto-footer [class*="__bottom"] {
   position: relative;
 }
+@media screen and (max-width: 767px) {.aheto-footer [class*="__bottom"] {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .aheto-footer-15 {
   background-color: #222222;
 }
+
+
 .aheto-footer-15__bottom:before {
   display: block;
   position: absolute;
@@ -137,6 +239,7 @@ body .swiper-button-next:hover {
 .aheto-toolbar .aht-socials__item a:hover {
   color: #2A74ED;
 }
+
 .aheto-pricing--tableHead .aheto-pricing__header {
   background: #2A74ED;
 }
@@ -146,15 +249,27 @@ body .swiper-button-next:hover {
 .aheto-pricing--tableHead .aheto-pricing__list-item h6:before {
   color: #2A74ED;
 }
+
 .aheto-pricing--tableColumn .aheto-pricing__header {
   background-color: #2A74ED;
 }
+
+
+
+
+
+
+
 .aheto-contact--simple .aheto-contact__icon {
   color: #2A74ED;
 }
 .aheto-contact--simple .aheto-contact__info {
   color: #999999;
 }
+
+
+
+
 body .swiper-button-prev {
   color: rgba(42, 116, 237, 0.2);
 }
@@ -225,9 +340,12 @@ blockquote p {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 blockquote:before {
   color: #222222;
 }
+
+
 a {
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
@@ -279,3 +397,23 @@ a {
   font-weight: 400;
   letter-spacing: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
