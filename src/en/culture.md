@@ -17,7 +17,7 @@ photos:
     link: /en/posts/top-culture-liptov
     photo: /img/surroundings - vlkolinec.jpg
     title: Vlkolinec
-  - description: Slovakia has more capitals per capita than any other country
+  - description: Slovakia has more castles per capita than any other country
     link: /en/posts/top-castles-liptov
     photo: /img/surroundings - likava-hrad.jpg
     title: Castles of Liptov
