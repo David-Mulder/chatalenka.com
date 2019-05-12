@@ -2,7 +2,7 @@
 layout: gallery.html
 collection:
   - surroundings
-title: ActiveSK
+title: Sport
 photos:
   - description: Skipark gondola lift 50m from the villa
     photo: /img/surroundings - skipark.jpg
