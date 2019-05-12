@@ -14,7 +14,7 @@ slides:
     button2Text: See the photos
     buttonLink: /en/book-now/
     buttonText: Book now
-    description: And welcome you in our modern vacation villa in the heart of Slovakia
+    description: And welcome you in our modern vacation cottage in the heart of Slovakia
     header: Allow us to be your hosts.
     photo: /img/front-clean.jpg
     style: left
