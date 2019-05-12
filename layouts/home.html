@@ -13,7 +13,7 @@
       <div class="swiper-wrapper ">
         {{#each slides}}
           {{#if (equals this.style 'center')}}
-          <div class="swiper-slide ">
+          <div class="swiper-slide " style="background: url({{imagesize this.photo 410}})">
             <div class="aht-ban aht-ban--main aht-ban--main-low-opacity aht-ban--main-1 t-center">
               <img class="js-bg" src="{{imagesize this.photo 1640}}" data-image-priority alt="Background">
               <div class="aht-ban__content">

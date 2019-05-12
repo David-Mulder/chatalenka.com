@@ -103,7 +103,7 @@ let a = Metalsmith(__dirname)
     }, {
       height: 1640
     }, {
-      height: 1080,
+      height: 410,
       quality: 15,
       grayscale: true
     }, {
