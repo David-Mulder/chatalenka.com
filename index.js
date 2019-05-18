@@ -67,7 +67,7 @@ let a = Metalsmith(__dirname)
   }))
   // .use()
   .use(markdown())
-  .use(multiLanguage({ default: 'en', locales: ['sk', 'en'] }))
+  .use(multiLanguage({ default: 'en', locales: ['sk', 'en', 'nl'] }))
   .use(permalinks())
   .use(assets({
     source: './assets',
