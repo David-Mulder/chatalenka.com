@@ -10,16 +10,16 @@ slides:
       A country worth visiting.
     photo: /img/slovakia.jpg
     style: center
-  - button2Link: /en/photos
-    button2Text: See the photos
+  - button2Link: ''
+    button2Text: ''
     buttonLink: /en/book-now/
     buttonText: Book now
     description: And welcome you in our modern vacation cottage in the heart of Slovakia
     header: Allow us to be your hosts.
     photo: /img/front-clean.jpg
     style: center
-  - buttonLink: en/villa/bedrooms
-    buttonText: Bedrooms
+  - buttonLink: /en/photos
+    buttonText: See the photos
     description: Is it not nice to relax beside a fireplace after a day of biking or skiing
     header: A warm place to relax
     photo: /img/villa - winter-fire.jpg
