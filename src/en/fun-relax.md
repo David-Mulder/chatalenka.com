@@ -8,29 +8,31 @@ photos:
     link: /en/posts/top-things-to-do-in-hrabovo/
     photo: /img/surroundings - relax.jpg
     title: Hrabovo
-  - description: Two amazing climbing parks
+  - description: 300 meter zipline
     link: /en/posts/top-things-to-do-in-hrabovo/
-    photo: /img/surroundings - tarzania.jpg
-    title: Tarzania & Tarzanka
+    photo: /img/surroundings - zipline.jpg
+    title: Tarzania zipline
   - description: >-
       Water ball walking first got public attention in the 1971 James Bond
       movie, try it yourself now.
     link: /en/posts/top-things-to-do-in-hrabovo/
     photo: /img/surroundings - aquazorbing.jpg
     title: Aquazorbing Hrabovo
-  - description: 300 meter zipline
+  - description: >-
+      On this side and the other side of the lake nearby you can climb the high
+      ropes. There are tracks for children, beginners and the advanced. 
     link: /en/posts/top-things-to-do-in-hrabovo/
-    photo: /img/surroundings - zipline.jpg
-    title: Tarzania zipline
+    photo: /img/surroundings - tarzania.jpg
+    title: Tarzania & Tarzanka
+  - description: Aquapark with traditional hot springs and much more.
+    link: /en/posts/top-3-hot-springs-in-slovakia/
+    photo: /img/surroundings - besenova.jpg
+    title: Besenova
   - description: >-
       The biggest aqua-park in Slovakia and one of the biggest in Central
       Europe.
     link: /en/posts/top-3-hot-springs-in-slovakia/
     photo: /img/surroundings - tatralandia.jpg
     title: Tatralandia
-  - description: Aquapark with traditional hot springs and much more.
-    link: /en/posts/top-3-hot-springs-in-slovakia/
-    photo: /img/surroundings - besenova.jpg
-    title: Besenova
 ---
 
