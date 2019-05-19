@@ -7,8 +7,18 @@ editor:
   preview: false
 collections:
   - name: "english posts"
-    label: "Posts (english only)"
+    label: "Posts (english)"
     folder: "src/en/posts/"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page.html"}
+      - {label: "Collection", name: "collection", widget: "hidden", default: "posts"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "dutch posts"
+    label: "Posts (Dutch)"
+    folder: "src/nl/posts/"
     create: true
     slug: "{{slug}}"
     fields: 
@@ -36,6 +46,16 @@ collections:
       - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"], multiple: true}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Photo", name: "photo", widget: "image"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "link", name: "link", widget: "string", required: false}, {label: "Big image", name: "big", widget: "boolean", required: false}]}
+  - name: "dutch galleries"
+    label: "Dutch galleries"
+    folder: "src/nl/"
+    create: true
+    filter: {field: "layout", value: "gallery.html"}
+    fields: 
+      - {label: "Layout", name: "layout", widget: "hidden", default: "gallery.html"}
+      - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"], multiple: true}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Photo", name: "photo", widget: "image"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "link", name: "link", widget: "string", required: false}, {label: "Big image", name: "big", widget: "boolean", required: false}]}
   - name: "english pages"
     label: "English standard pages"
     folder: "src/en/"
@@ -48,12 +68,256 @@ collections:
       - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
       - {label: "Map zoom level", name: "zoom-level", widget: "number", step: 1, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "Special pages"
+  - name: "slovak pages"
+    label: "Slovak standard pages"
+    folder: "src/sk/"
+    create: true
+    filter: {field: "layout", value: "page.html"}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page.html"}
+      - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
+      - {label: "Map zoom level", name: "zoom-level", widget: "number", step: 1, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "dutch pages"
+    label: "Dutch standard pages"
+    folder: "src/nl/"
+    create: true
+    filter: {field: "layout", value: "page.html"}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page.html"}
+      - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
+      - {label: "Map zoom level", name: "zoom-level", widget: "number", step: 1, required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+- name: "Special pages"
     label: "Configuration"
     files:
       - label: "English home"
         name: "en-home"
         file: "src/index_en.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - label: Slides
+            name: slides
+            widget: list
+            required: false
+            fields:
+              - label: Style
+                name: style
+                widget: select
+                options: 
+                  - left
+                  - center
+              - label: Photo
+                name: photo
+                widget: image
+              - label: Header
+                name: header
+                widget: text
+              - label: Description
+                name: description
+                widget: text
+              - label: Button text
+                name: buttonText
+                widget: string
+              - label: Button link
+                name: buttonLink
+                widget: string
+              - label: Button2 text
+                name: button2Text
+                widget: string
+                required: false
+                hint: Not available on center slide style
+              - label: Button2 link
+                name: button2Link
+                widget: string
+                required: false
+                hint: Not available on center slide style
+          - label: "Review scores"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - label: Category
+                name: title
+                widget: string
+              - label: Score
+                name: score
+                widget: number
+                min: 5
+                max: 10
+                step: 0.1
+          - label: body
+            name: contentBlocks
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+              - label: Link text
+                name: linkText
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+              - name: photo1photo
+                label: Left photo
+                widget: image
+              - name: photo1icon
+                label: Left title icon
+                widget: select
+                options: 
+                  - far fa-laugh-beam
+                  - far fa-heart
+                  - far fa-flag
+                  - fas fa-utensils
+                  - fas fa-skiing
+                  - fa fa-bicycle
+              - name: photo1title
+                label: Left title
+                widget: string
+              - name: photo1text
+                label: Left text
+                widget: text
+              - name: photo2photo
+                label: Left photo
+                widget: image
+              - name: photo2icon
+                label: Left title icon
+                widget: select
+                options: 
+                  - far fa-laugh-beam
+                  - far fa-heart
+                  - far fa-flag
+                  - fas fa-utensils
+                  - fas fa-skiing
+                  - fa fa-bicycle
+              - name: photo2title
+                label: Left title
+                widget: string
+              - name: photo2text
+                label: Left text
+                widget: text
+              
+      - label: "Slovak home"
+        name: "sk-home"
+        file: "src/index_sk.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - label: Slides
+            name: slides
+            widget: list
+            required: false
+            fields:
+              - label: Style
+                name: style
+                widget: select
+                options: 
+                  - left
+                  - center
+              - label: Photo
+                name: photo
+                widget: image
+              - label: Header
+                name: header
+                widget: text
+              - label: Description
+                name: description
+                widget: text
+              - label: Button text
+                name: buttonText
+                widget: string
+              - label: Button link
+                name: buttonLink
+                widget: string
+              - label: Button2 text
+                name: button2Text
+                widget: string
+                required: false
+                hint: Not available on center slide style
+              - label: Button2 link
+                name: button2Link
+                widget: string
+                required: false
+                hint: Not available on center slide style
+          - label: "Review scores"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - label: Category
+                name: title
+                widget: string
+              - label: Score
+                name: score
+                widget: number
+                min: 5
+                max: 10
+                step: 0.1
+          - label: body
+            name: contentBlocks
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Description
+                name: description
+                widget: text
+              - label: Link text
+                name: linkText
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+              - name: photo1photo
+                label: Left photo
+                widget: image
+              - name: photo1icon
+                label: Left title icon
+                widget: select
+                options: 
+                  - far fa-laugh-beam
+                  - far fa-heart
+                  - far fa-flag
+                  - fas fa-utensils
+                  - fas fa-skiing
+                  - fa fa-bicycle
+              - name: photo1title
+                label: Left title
+                widget: string
+              - name: photo1text
+                label: Left text
+                widget: text
+              - name: photo2photo
+                label: Left photo
+                widget: image
+              - name: photo2icon
+                label: Left title icon
+                widget: select
+                options: 
+                  - far fa-laugh-beam
+                  - far fa-heart
+                  - far fa-flag
+                  - fas fa-utensils
+                  - fas fa-skiing
+                  - fa fa-bicycle
+              - name: photo2title
+                label: Left title
+                widget: string
+              - name: photo2text
+                label: Left text
+                widget: text
+              
+      - label: "Dutch home"
+        name: "nl-home"
+        file: "src/index_nl.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Layout", name: "layout", widget: "hidden"}
