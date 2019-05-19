@@ -16,9 +16,10 @@ collections:
       - {label: "Collection", name: "collection", widget: "hidden", default: "posts"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      
   - name: "dutch posts"
     label: "Posts (Dutch)"
-    folder: "src/nl/posts/"
+    folder: "src/en/posts/"
     create: true
     slug: "{{slug}}"
     fields: 
@@ -26,6 +27,7 @@ collections:
       - {label: "Collection", name: "collection", widget: "hidden", default: "posts"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      
   - name: "english galleries"
     label: "English galleries"
     folder: "src/en/"
@@ -36,6 +38,7 @@ collections:
       - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"], multiple: true}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Photo", name: "photo", widget: "image"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "link", name: "link", widget: "string", required: false}, {label: "Big image", name: "big", widget: "boolean", required: false}]}
+  
   - name: "slovak galleries"
     label: "Slovak galleries"
     folder: "src/sk/"
@@ -46,9 +49,10 @@ collections:
       - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"], multiple: true}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Photo", name: "photo", widget: "image"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "link", name: "link", widget: "string", required: false}, {label: "Big image", name: "big", widget: "boolean", required: false}]}
+  
   - name: "dutch galleries"
     label: "Dutch galleries"
-    folder: "src/nl/"
+    folder: "src/en/"
     create: true
     filter: {field: "layout", value: "gallery.html"}
     fields: 
@@ -56,6 +60,7 @@ collections:
       - {label: "Collection", name: "collection", widget: "select", options: ["aboutus", "photos", "surroundings"], multiple: true}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Photos", name: "photos", widget: "list", default: [], fields: [{label: "Photo", name: "photo", widget: "image"}, {label: "Title", name: "title", widget: "string"}, {label: "Description", name: "description", widget: "string"}, {label: "link", name: "link", widget: "string", required: false}, {label: "Big image", name: "big", widget: "boolean", required: false}]}
+  
   - name: "english pages"
     label: "English standard pages"
     folder: "src/en/"
@@ -68,6 +73,7 @@ collections:
       - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
       - {label: "Map zoom level", name: "zoom-level", widget: "number", step: 1, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  
   - name: "slovak pages"
     label: "Slovak standard pages"
     folder: "src/sk/"
@@ -80,9 +86,10 @@ collections:
       - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
       - {label: "Map zoom level", name: "zoom-level", widget: "number", step: 1, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  
   - name: "dutch pages"
     label: "Dutch standard pages"
-    folder: "src/nl/"
+    folder: "src/en/"
     create: true
     filter: {field: "layout", value: "page.html"}
     fields:
@@ -92,6 +99,7 @@ collections:
       - {label: "Show map", name: "showMap", widget: "boolean", default: false, required: false}
       - {label: "Map zoom level", name: "zoom-level", widget: "number", step: 1, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "Special pages"
     label: "Configuration"
     files:
@@ -317,7 +325,7 @@ collections:
               
       - label: "Dutch home"
         name: "nl-home"
-        file: "src/index_nl.md"
+        file: "src/index_en.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Layout", name: "layout", widget: "hidden"}
