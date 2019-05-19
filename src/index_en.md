@@ -2,27 +2,31 @@
 title: Home
 layout: home.html
 slides:
-  - buttonLink: /en/posts/top-7-slovakia/
-    buttonText: 7 things you must try in Slovakia
-    description: We would love to welcome you.
-    header: |-
-      This is Slovakia.
-      A country worth visiting.
-    photo: /img/surroundings-nizke-tatry-7.jpg
-    style: center
   - button2Link: ''
     button2Text: ''
     buttonLink: /en/book-now/
     buttonText: Book now
-    description: And welcome you in our modern vacation cottage in the heart of Slovakia
-    header: Allow us to be your hosts.
+    description: >-
+      Allow us to be your hosts and welcome you in our modern holiday cottage in
+      Liptov, the heart of Slovakia
+    header: Chata Lenka
     photo: /img/front-clean.jpg
     style: center
   - buttonLink: /en/photos
     buttonText: See the photos
-    description: Is it not nice to relax beside a fireplace after a day of biking or skiing
-    header: A warm place to relax
+    description: >-
+      Is it not nice to relax beside a fireplace after a day of biking, hiking
+      or skiing. Or after climbing, swimming, exploring etc. 
+    header: Here you'll find a warm place to relax
     photo: /img/villa - winter-fire.jpg
+    style: center
+  - buttonLink: /en/posts/top-7-slovakia/
+    buttonText: 7 things you must try in Liptov
+    description: And we would love to be your hosts.
+    header: |-
+      This is Liptov (Central Slovakia).
+      A country worth visiting.
+    photo: /img/surroundings-nizke-tatry-7.jpg
     style: center
 reviews:
   - score: 9.3
