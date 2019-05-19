@@ -8,7 +8,7 @@ slides:
     header: |-
       This is Slovakia.
       A country worth visiting.
-    photo: /img/slovakia.jpg
+    photo: /img/surroundings-nizke-tatry-7.jpg
     style: center
   - button2Link: ''
     button2Text: ''
