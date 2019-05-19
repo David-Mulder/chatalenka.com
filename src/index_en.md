@@ -55,7 +55,7 @@ contentBlocks:
     photo1photo: /img/surroundings - tatralandia.jpg
     photo1text: >-
       Enjoy countless of activities for young and old and make sure you fully
-      enjoy your vacation.
+      enjoy your holidays.
     photo1title: Fun
     photo2icon: far fa-heart
     photo2photo: /img/surroundings - relax.jpg
@@ -74,8 +74,9 @@ contentBlocks:
     photo1icon: far fa-flag
     photo1photo: /img/surroundings-vlkolinec.jpg
     photo1text: >-
-      A short hike from our villa you can visit the traditionally timeless
-      Slovak village Vlkolinec.
+      A short hike from our cottage you can visit the traditionally timeless
+      Slovak village Vlkolinec. With many wooden houses, the bell-tower and a
+      little stream flowing through the middle of this picturesque village.
     photo1title: 'Vlkolinec: Unesco World Heritage site'
     photo2icon: fas fa-utensils
     photo2photo: /img/surroundings - jedlo.jpg
