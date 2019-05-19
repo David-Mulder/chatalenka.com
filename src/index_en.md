@@ -22,9 +22,11 @@ slides:
     style: center
   - buttonLink: /en/posts/top-7-slovakia/
     buttonText: 7 things you must try in Liptov
-    description: And we would love to be your hosts.
+    description: |-
+      We would love to be your hosts.
+      And let you discover all the other aspects of Liptov.
     header: |-
-      This is Liptov (Central Slovakia).
+      This is Liptov
       A country worth visiting.
     photo: /img/surroundings-nizke-tatry-7.jpg
     style: center
