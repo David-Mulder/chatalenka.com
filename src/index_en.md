@@ -27,7 +27,7 @@ slides:
       And let you discover all the other aspects of Liptov.
     header: |-
       This is Liptov
-      A country worth visiting.
+      An European region in Slovakia worth visiting.
     photo: /img/surroundings-nizke-tatry-7.jpg
     style: center
 reviews:
