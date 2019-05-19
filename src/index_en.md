@@ -59,7 +59,11 @@ contentBlocks:
     photo1title: Fun
     photo2icon: far fa-heart
     photo2photo: /img/surroundings - relax.jpg
-    photo2text: asdf2
+    photo2text: >-
+      At a stones throw distance there is a little lake where you can lay at the
+      shore and listen to the stream gurgling, the wind whispering through the
+      leaves and the birds singing and when you need to cool down, go for a
+      swim.
     photo2title: Relax
     title: 'Have **fun & relax**,'
   - description: >-
@@ -68,34 +72,34 @@ contentBlocks:
     link: /en/culture
     linkText: Learn more
     photo1icon: far fa-flag
-    photo1photo: /img/surroundings - vlkolinec.jpg
+    photo1photo: /img/surroundings-vlkolinec.jpg
     photo1text: >-
       A short hike from our villa you can visit the traditionally timeless
       Slovak village Vlkolinec.
-    photo1title: Unesco Heritage site
+    photo1title: 'Vlkolinec: Unesco World Heritage site'
     photo2icon: fas fa-utensils
     photo2photo: /img/surroundings - jedlo.jpg
     photo2text: >-
-      From halusky to smoked sheep cheeses, Slovakia offers a lot of unique food
+      From halusky to smoked sheep cheeses, Liptov offers a lot of unique food
       worth tasting.
     photo2title: Food
     title: 'Experience a new **culture**,'
   - description: >-
-      What better place to get active than in one of the most beautiful
-      countries in Europe.
+      What better place to get active than in maybe the most beautiful region in
+      Slovakia.
     link: /en/active
-    linkText: Learn more
+    linkText: Learn more about how to get active in Liptov
     photo1icon: fas fa-skiing
     photo1photo: /img/surroundings - skipark.jpg
     photo1text: >-
-      A gondola lift will take you straight from our vacation villa to skipark
-      Malino Brdo.
+      A gondola (cabin-) lift will take you straight from our holiday cottage to
+      skipark Malino Brdo.
     photo1title: Wintersports
     photo2icon: fa fa-bicycle
     photo2photo: /img/surroundings - bikepark.jpg
     photo2text: >-
-      In Summer Malino Brdo transforms in one of the most popular bikeparks in
-      central Europe.
+      In Summer Malino Brdo transforms into one of the most popular bikeparks in
+      Central Europe.
     photo2title: Mountainbiking
     title: And get **active**.
 ---
